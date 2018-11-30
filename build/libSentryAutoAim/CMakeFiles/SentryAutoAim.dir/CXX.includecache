@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libBT/include/blackboard.h
+log.h
+../libBT/include/log.h
+memory
+-
+
+../libBase/baseTools/include/log.h
+glog/logging.h
+../libBase/baseTools/include/glog/logging.h
+glog/raw_logging.h
+../libBase/baseTools/include/glog/raw_logging.h
+fstream
+-
+
+../libSentryAutoAim/include/kalman_filter_by_opencv.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
+../libSentryAutoAim/include/sentry_blackboard.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp
+kalman_filter_by_opencv.h
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.h
+
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/sentry_blackboard.cpp
+sentry_blackboard.h
+-
+

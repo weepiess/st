@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSentryAutoAim.a  CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o CMakeFiles/SentryAutoAim.dir/src/sentry_blackboard.cpp.o
+/usr/bin/ranlib libSentryAutoAim.a
