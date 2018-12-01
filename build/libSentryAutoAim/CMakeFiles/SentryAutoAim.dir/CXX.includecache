@@ -20,19 +20,9 @@ glog/raw_logging.h
 fstream
 -
 
-../libSentryAutoAim/include/kalman_filter_by_opencv.h
-opencv2/opencv.hpp
--
-iostream
--
-
 ../libSentryAutoAim/include/sentry_blackboard.h
 blackboard.h
 ../libSentryAutoAim/include/blackboard.h
-
-/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp
-kalman_filter_by_opencv.h
-/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.h
 
 /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/sentry_blackboard.cpp
 sentry_blackboard.h

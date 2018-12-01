@@ -158,14 +158,6 @@ serial_port_debug.h
 log.h
 /home/wyx/程序/sentry_autoaim/src/log.h
 
-/home/wyx/程序/sentry_autoaim/src/robot_model.cpp
-unistd.h
--
-robot_model.h
--
-basic_tool.h
--
-
 /home/wyx/程序/sentry_autoaim/src/serial_listen_thread.cpp
 serial_listen_thread.h
 /home/wyx/程序/sentry_autoaim/src/serial_listen_thread.h

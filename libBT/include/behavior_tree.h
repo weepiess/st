@@ -15,17 +15,21 @@ namespace bt{
 
 class BehaviorTree{
 public:
-    BehaviorTree(BehaviorNode::Ptr root_node, int cycle_duration) :
-        root_node_(root_node),
+    BehaviorTree(const Blackboard::Ptr& blackboard_ptr, int cycle_duration):
+        blackboard_ptr(blackboard_ptr),
         cycle_duration_(cycle_duration),
         running_(false) {}
+
+    //子类需要实现该函数，在该函数中创建节点并连接成树，最后必须将根节点的指针传给root_node_!!!
+    virtual void initBT() = 0;
 
     void execute();
 
     void stop();
 
 private:
-    BehaviorNode::Ptr root_node_;
+    BehaviorNode::Ptr root_node_ptr;
+    Blackboard::Ptr blackboard_ptr; //该指针需要传给每个创建的节点
     std::chrono::milliseconds cycle_duration_;
     bool running_;
 }; //class

@@ -1,11 +1,13 @@
 #include <behavior_tree.h>
 
 void bt::BehaviorTree::execute(){
+    //必须在之前调用
+    initBT();
     running_ = true;
 
     while (running_) {
         std::chrono::steady_clock::time_point start_time = std::chrono::steady_clock::now();
-        root_node_->run();
+        root_node_ptr->run();
 
         std::chrono::steady_clock::time_point end_time = std::chrono::steady_clock::now();
         std::chrono::milliseconds execution_duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);

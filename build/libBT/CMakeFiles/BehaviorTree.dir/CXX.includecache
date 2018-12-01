@@ -82,33 +82,7 @@ glog/raw_logging.h
 fstream
 -
 
-/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.cpp
-behavior_node.h
-/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.h
-
 /home/wyx/程序/sentry_autoaim/libBT/src/behavior_tree.cpp
 behavior_tree.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/blackboard.cpp
-
-/home/wyx/程序/sentry_autoaim/libBT/src/composite_node.cpp
-composite_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/parallel_node.cpp
-parallel_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/precondition_node.cpp
-precondition_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/selector_node.cpp
-selector_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/sequence_node.cpp
-sequence_node.h
 -
 
