@@ -105,57 +105,33 @@ uchar SentryBlackboard::isBulletRemain(){
 
 /*---------------------外部获取数据---------------------*/
 OutChassisPos* SentryBlackboard::getOutChassisPos(){
-    if(out_chassis_pos.is_update){
-        out_chassis_pos.is_update = false;
-        return &out_chassis_pos;
-    } else return NULL;
+    return &out_chassis_pos;
 }
 
 OutChassisConstMove* SentryBlackboard::getOutChassisConstMove(){
-    if(out_chassis_const_move.is_update){
-        out_chassis_const_move.is_update = false;
-        return &out_chassis_const_move;
-    } else return NULL;
+    return &out_chassis_const_move;
 }
 
 OutChassisRandomMove* SentryBlackboard::getOutChassisRandomMove(){
-    if(out_chassis_random_move.is_update){
-        out_chassis_random_move.is_update = false;
-        return &out_chassis_random_move;
-    } else return NULL;
+    return &out_chassis_random_move;
 }
 
 OutChassisSwingMove* SentryBlackboard::getOutChassisSwingMove(){
-    if(out_chassis_swing_move.is_update){
-        out_chassis_swing_move.is_update = false;
-        return &out_chassis_swing_move;
-    } else return NULL;
+    return &out_chassis_swing_move;
 }
 
 OutShoot* SentryBlackboard::getOutShoot(){
-    if(out_shoot.is_update){
-        out_shoot.is_update = false;
-        return &out_shoot;
-    } else return NULL;
+    return &out_shoot;
 }
 
 OutYuntaiRelativeAngle* SentryBlackboard::getOutRelativeAngle(){
-    if(out_yuntai_relative_angle.is_update){
-        out_yuntai_relative_angle.is_update = false;
-        return &out_yuntai_relative_angle;
-    } else return NULL;   
+    return &out_yuntai_relative_angle;
 }
 
 OutGlobalScan* SentryBlackboard::getOutGlobalScan(){
-    if(out_global_scan.is_update){
-        out_global_scan.is_update = false;
-        return &out_global_scan;
-    } else return NULL;
+    return &out_global_scan;
 }
 
 OutLocalScan* SentryBlackboard::getOutLocalScan(){
-    if(out_local_scan.is_update){
-        out_local_scan.is_update = false;
-        return &out_local_scan;
-    } else return NULL;
+    return &out_local_scan;
 }

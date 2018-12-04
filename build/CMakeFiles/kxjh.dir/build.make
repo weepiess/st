@@ -140,7 +140,7 @@ kxjh: /usr/local/lib/libopencv_dnn.so.3.4.3
 kxjh: /usr/local/lib/libopencv_ml.so.3.4.3
 kxjh: /usr/local/lib/libopencv_calib3d.so.3.4.3
 kxjh: /usr/local/lib/libopencv_superres.so.3.4.3
-kxjh: ../libBase/baseLog/lib/libglog.so
+kxjh: /usr/local/lib/libglog.so
 kxjh: /usr/local/lib/libopencv_features2d.so.3.4.3
 kxjh: /usr/local/lib/libopencv_flann.so.3.4.3
 kxjh: /usr/local/lib/libopencv_highgui.so.3.4.3

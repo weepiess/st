@@ -7,7 +7,7 @@ namespace bt{
 
 class DecoratorNode: public BehaviorNode{
 public:
-    DecoratorNode(std::string name, BehaviorType behavior_type, const Blackboard::Ptr &blackboard_ptr,
+    DecoratorNode(std::string name, BehaviorType behavior_type, const SentryBlackboard::Ptr &blackboard_ptr,
                    const BehaviorNode::Ptr &child_node_ptr = nullptr):
         BehaviorNode::BehaviorNode(name, behavior_type, blackboard_ptr),
         child_node_ptr_(child_node_ptr){  }

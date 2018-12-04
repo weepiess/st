@@ -24,7 +24,7 @@ void bt::SelectorNode::setChildrenIndex(unsigned int children_node_index){
     children_node_index_ = children_node_index;
 }
 
-bt::BehaviorState bt::SelectorNode::Update(){
+bt::BehaviorState bt::SelectorNode::update(){
     if (children_node_ptr_.size() == 0) {
         return BehaviorState::SUCCESS;
     }
@@ -59,12 +59,12 @@ bt::BehaviorState bt::SelectorNode::Update(){
     }
 }
 
-void bt::SelectorNode::OnInitialize(){
+void bt::SelectorNode::onInitialize(){
     children_node_index_ = 0;
     LOG_INFO<<name_<<" "<<__FUNCTION__;
 }
 
-void bt::SelectorNode::OnTerminate(BehaviorState state){
+void bt::SelectorNode::onTerminate(BehaviorState state){
     switch (state){
         case BehaviorState::IDLE:
             LOG_INFO<<name_<<" "<<__FUNCTION__<<" IDLE!";

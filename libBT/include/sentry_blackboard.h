@@ -2,7 +2,8 @@
 #define SENTRY_BLACKBOARD_H
 typedef unsigned char uchar;
 
-#include "blackboard.h"
+#include <memory>
+#include "log.h"
 
 //输入血量信息
 struct InBloodInfo{
@@ -82,8 +83,11 @@ struct OutLocalScan{
     int yaw_move_level;
 };
 
-class SentryBlackboard: public bt::Blackboard{
+class SentryBlackboard{
+
 public:
+    typedef std::shared_ptr<SentryBlackboard> Ptr;
+
     SentryBlackboard();
     ~SentryBlackboard();
 

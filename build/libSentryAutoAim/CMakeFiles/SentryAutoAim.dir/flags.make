@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wyx/程序/sentry_autoaim/libBase/baseLog/include -I/home/wyx/程序/sentry_autoaim/include -I/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/include -I/home/wyx/程序/sentry_autoaim/libHardWare/usbCapture/include -I/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/include -I/home/wyx/程序/sentry_autoaim/libBase/baseClasses/include -I/home/wyx/程序/sentry_autoaim/libBase/baseTools/include -I/home/wyx/程序/sentry_autoaim/libBT/include -I/home/wyx/程序/sentry_autoaim/libSentryAutoAim/include -I/home/wyx/程序/sentry_autoaim/libSentryAutoAim/./include 
+CXX_INCLUDES = -I/usr/local/include/glog -I/home/wyx/程序/sentry_autoaim/include -I/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/include -I/home/wyx/程序/sentry_autoaim/libHardWare/usbCapture/include -I/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/include -I/home/wyx/程序/sentry_autoaim/libBase/baseClasses/include -I/home/wyx/程序/sentry_autoaim/libBase/baseTools/include -I/home/wyx/程序/sentry_autoaim/libBT/include -I/home/wyx/程序/sentry_autoaim/libSentryAutoAim/include -I/home/wyx/程序/sentry_autoaim/libSentryAutoAim/./include 
 

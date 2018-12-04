@@ -1,6 +1,6 @@
 #include <sequence_node.h>
 
-bt::BehaviorState bt::SequenceNode::Update(){
+bt::BehaviorState bt::SequenceNode::update(){
     if (children_node_ptr_.size() == 0) {
         return BehaviorState::SUCCESS;
     }
@@ -19,12 +19,12 @@ bt::BehaviorState bt::SequenceNode::Update(){
     }
 }
 
-void bt::SequenceNode::OnInitialize(){
+void bt::SequenceNode::onInitialize(){
     children_node_index_ = 0;
     LOG_INFO<<name_<<" "<<__FUNCTION__;
 }
 
-void bt::SequenceNode::OnTerminate(BehaviorState state){
+void bt::SequenceNode::onTerminate(BehaviorState state){
     switch (state){
         case BehaviorState::IDLE:
             LOG_INFO<<name_<<" "<<__FUNCTION__<<" IDLE!";

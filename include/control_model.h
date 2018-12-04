@@ -16,7 +16,8 @@
 #define RMDEMO_CONTROL_MODEL_H
 #include "robot_model.h"
 #include <opencv2/opencv.hpp>
-#include <sentry_blackboard.h>
+#include "sentry_blackboard.h"
+#include "behavior_tree_test.h"
 
 class ControlModel{
 public:
@@ -35,7 +36,8 @@ private:
     RobotMode mSetMode;
     RobotModel* pRobotModel;
 
-    SentryBlackboard mSentryBlackboard;
+    SentryBlackboard::Ptr mSentryBlackboard = std::make_shared<SentryBlackboard>();
+    BehaviorTreeTest* mBehaviorTree;
 };
 
 #endif //RMDEMO_CONTROL_MODEL_H

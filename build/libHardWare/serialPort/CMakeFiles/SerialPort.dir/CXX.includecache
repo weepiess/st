@@ -38,29 +38,7 @@ string.h
 iostream
 -
 
-../libHardWare/serialPort/include/serial_port_debug.h
-serial_interface.h
-../libHardWare/serialPort/include/serial_interface.h
-serial_packet.h
-../libHardWare/serialPort/include/serial_packet.h
-
 /home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_interface.cpp
 serial_interface.h
 /home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_interface.h
-
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_packet.cpp
-cstring
--
-serial_packet.h
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_packet.h
-
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_port.cpp
-sstream
--
-serial_port.h
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_port.h
-
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_port_debug.cpp
-serial_port_debug.h
-/home/wyx/程序/sentry_autoaim/libHardWare/serialPort/src/serial_port_debug.h
 

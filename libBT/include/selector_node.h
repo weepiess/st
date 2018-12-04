@@ -8,9 +8,8 @@ namespace bt{
 
 class SelectorNode: public CompositeNode{
 public:
-    SelectorNode(std::string name, const Blackboard::Ptr &blackboard_ptr):
-        CompositeNode::CompositeNode(name, BehaviorType::SELECTOR, blackboard_ptr) {
-    }
+    SelectorNode(std::string name, const SentryBlackboard::Ptr &blackboard_ptr):
+        CompositeNode::CompositeNode(name, BehaviorType::SELECTOR, blackboard_ptr) {}
 
     virtual ~SelectorNode() = default;
 
@@ -21,9 +20,9 @@ public:
     void setChildrenIndex(unsigned int children_node_index);
 
 protected:
-    virtual BehaviorState Update();
-    virtual void OnInitialize();
-    virtual void OnTerminate(BehaviorState state);
+    virtual void onInitialize();
+    virtual bt::BehaviorState update();
+    virtual void onTerminate(BehaviorState state);
 
     std::vector<bool> children_node_reevaluation_;
 

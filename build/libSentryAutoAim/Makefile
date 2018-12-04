@@ -125,6 +125,60 @@ SentryAutoAim/fast:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build
 .PHONY : SentryAutoAim/fast
 
+src/behavior_node_test.o: src/behavior_node_test.cpp.o
+
+.PHONY : src/behavior_node_test.o
+
+# target to build an object file
+src/behavior_node_test.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o
+.PHONY : src/behavior_node_test.cpp.o
+
+src/behavior_node_test.i: src/behavior_node_test.cpp.i
+
+.PHONY : src/behavior_node_test.i
+
+# target to preprocess a source file
+src/behavior_node_test.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.i
+.PHONY : src/behavior_node_test.cpp.i
+
+src/behavior_node_test.s: src/behavior_node_test.cpp.s
+
+.PHONY : src/behavior_node_test.s
+
+# target to generate assembly for a file
+src/behavior_node_test.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.s
+.PHONY : src/behavior_node_test.cpp.s
+
+src/behavior_tree_test.o: src/behavior_tree_test.cpp.o
+
+.PHONY : src/behavior_tree_test.o
+
+# target to build an object file
+src/behavior_tree_test.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o
+.PHONY : src/behavior_tree_test.cpp.o
+
+src/behavior_tree_test.i: src/behavior_tree_test.cpp.i
+
+.PHONY : src/behavior_tree_test.i
+
+# target to preprocess a source file
+src/behavior_tree_test.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.i
+.PHONY : src/behavior_tree_test.cpp.i
+
+src/behavior_tree_test.s: src/behavior_tree_test.cpp.s
+
+.PHONY : src/behavior_tree_test.s
+
+# target to generate assembly for a file
+src/behavior_tree_test.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.s
+.PHONY : src/behavior_tree_test.cpp.s
+
 src/kalman_filter_by_opencv.o: src/kalman_filter_by_opencv.cpp.o
 
 .PHONY : src/kalman_filter_by_opencv.o
@@ -152,33 +206,6 @@ src/kalman_filter_by_opencv.cpp.s:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.s
 .PHONY : src/kalman_filter_by_opencv.cpp.s
 
-src/sentry_blackboard.o: src/sentry_blackboard.cpp.o
-
-.PHONY : src/sentry_blackboard.o
-
-# target to build an object file
-src/sentry_blackboard.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_blackboard.cpp.o
-.PHONY : src/sentry_blackboard.cpp.o
-
-src/sentry_blackboard.i: src/sentry_blackboard.cpp.i
-
-.PHONY : src/sentry_blackboard.i
-
-# target to preprocess a source file
-src/sentry_blackboard.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_blackboard.cpp.i
-.PHONY : src/sentry_blackboard.cpp.i
-
-src/sentry_blackboard.s: src/sentry_blackboard.cpp.s
-
-.PHONY : src/sentry_blackboard.s
-
-# target to generate assembly for a file
-src/sentry_blackboard.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_blackboard.cpp.s
-.PHONY : src/sentry_blackboard.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,12 +215,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SentryAutoAim"
+	@echo "... src/behavior_node_test.o"
+	@echo "... src/behavior_node_test.i"
+	@echo "... src/behavior_node_test.s"
+	@echo "... src/behavior_tree_test.o"
+	@echo "... src/behavior_tree_test.i"
+	@echo "... src/behavior_tree_test.s"
 	@echo "... src/kalman_filter_by_opencv.o"
 	@echo "... src/kalman_filter_by_opencv.i"
 	@echo "... src/kalman_filter_by_opencv.s"
-	@echo "... src/sentry_blackboard.o"
-	@echo "... src/sentry_blackboard.i"
-	@echo "... src/sentry_blackboard.s"
 .PHONY : help
 
 

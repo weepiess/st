@@ -17,10 +17,15 @@
 
 ControlModel::ControlModel(){}
 
-ControlModel::~ControlModel(){}
+ControlModel::~ControlModel(){
+    delete mBehaviorTree;
+}
 
 void ControlModel::init(RobotModel* robotModel){
     pRobotModel=robotModel;
+
+    //auto blackboard_ptr = std::make_shared<SentryBlackboard>(mSentryBlackboard);
+    mBehaviorTree = new BehaviorTreeTest(mSentryBlackboard, 25);
 
     mSetMode=ROBOT_MODE_AUTO;
 }
@@ -33,10 +38,10 @@ void ControlModel::serialListenDataProcess(SerialPacket recvPacket) {
     unsigned char CMD = recvPacket.getCMD();
     // cout<<"CMD:"<<(int)CMD<<endl;
     if(CMD_SERIAL_BLOOD_INFO_RECV == CMD){
-        mSentryBlackboard.updateBloodInfo(recvPacket.getIntInBuffer(2), recvPacket.getIntInBuffer(6),
+        mSentryBlackboard->updateBloodInfo(recvPacket.getIntInBuffer(2), recvPacket.getIntInBuffer(6),
             recvPacket.getUncharInBuffer(10), recvPacket.getUncharInBuffer(11));
     } else if(CMD_SERIAL_CHASSIS_INFO_RECV == CMD){
-        mSentryBlackboard.updateChassisInfo(recvPacket.getFloatInBuffer(2), recvPacket.getFloatInBuffer(6),
+        mSentryBlackboard->updateChassisInfo(recvPacket.getFloatInBuffer(2), recvPacket.getFloatInBuffer(6),
             recvPacket.getShortIntInBuffer(10), recvPacket.getUncharInBuffer(12));
     }
 }
@@ -47,8 +52,10 @@ void ControlModel::processFSM(){
         pRobotModel->setCurrentMode(mSetMode);
         switch (mSetMode){
             case ROBOT_MODE_STOP:
+                mBehaviorTree->stop();
                 break;
             case ROBOT_MODE_AUTO:
+                mBehaviorTree->execute();
                 break;
             default:
                 break;
@@ -70,6 +77,7 @@ void ControlModel::processFSM(){
 
             //从blackboard中取出数据发送给串口
             serialSendDataProcess();
+            usleep(10000); //1ms
             break;
         }
         default:
@@ -79,51 +87,59 @@ void ControlModel::processFSM(){
 }
 
 void ControlModel::serialSendDataProcess(){
-    if(mSentryBlackboard.getOutChassisPos() != NULL){
+    if(mSentryBlackboard->getOutChassisPos()->is_update){
         pRobotModel->getpSerialInterface()->chassisPosSet(
-            mSentryBlackboard.getOutChassisPos()->pos_to_move,
-            mSentryBlackboard.getOutChassisPos()->move_level);
+            mSentryBlackboard->getOutChassisPos()->pos_to_move,
+            mSentryBlackboard->getOutChassisPos()->move_level);
+        mSentryBlackboard->getOutChassisPos()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutChassisConstMove() != NULL){
+    if(mSentryBlackboard->getOutChassisConstMove()->is_update){
         pRobotModel->getpSerialInterface()->chassisConstMove(
-            mSentryBlackboard.getOutChassisConstMove()->move_level);
+            mSentryBlackboard->getOutChassisConstMove()->move_level);
+        mSentryBlackboard->getOutChassisConstMove()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutChassisRandomMove() != NULL){
+    if(mSentryBlackboard->getOutChassisRandomMove()->is_update){
         pRobotModel->getpSerialInterface()->chassisRandomMove(
-            mSentryBlackboard.getOutChassisRandomMove()->move_level,
-            mSentryBlackboard.getOutChassisRandomMove()->min_pos,
-            mSentryBlackboard.getOutChassisRandomMove()->max_pos);
+            mSentryBlackboard->getOutChassisRandomMove()->move_level,
+            mSentryBlackboard->getOutChassisRandomMove()->min_pos,
+            mSentryBlackboard->getOutChassisRandomMove()->max_pos);
+        mSentryBlackboard->getOutChassisRandomMove()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutChassisSwingMove() != NULL){
+    if(mSentryBlackboard->getOutChassisSwingMove()->is_update){
         pRobotModel->getpSerialInterface()->chassisSwingMove(
-            mSentryBlackboard.getOutChassisSwingMove()->move_level);
+            mSentryBlackboard->getOutChassisSwingMove()->move_level);
+        mSentryBlackboard->getOutChassisSwingMove()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutShoot() != NULL){
+    if(mSentryBlackboard->getOutShoot()->is_update){
         pRobotModel->getpSerialInterface()->shoot(
-            mSentryBlackboard.getOutShoot()->bullet_count);
+            mSentryBlackboard->getOutShoot()->bullet_count);
+        mSentryBlackboard->getOutShoot()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutGlobalScan() != NULL){
+    if(mSentryBlackboard->getOutGlobalScan()->is_update){
         pRobotModel->getpSerialInterface()->globalScanning(
-            mSentryBlackboard.getOutGlobalScan()->pitch_move_level,
-            mSentryBlackboard.getOutGlobalScan()->yaw_move_level);
+            mSentryBlackboard->getOutGlobalScan()->pitch_move_level,
+            mSentryBlackboard->getOutGlobalScan()->yaw_move_level);
+        mSentryBlackboard->getOutGlobalScan()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutLocalScan() != NULL){
+    if(mSentryBlackboard->getOutLocalScan()->is_update){
         pRobotModel->getpSerialInterface()->localScanning(
-            mSentryBlackboard.getOutLocalScan()->yaw,
-            mSentryBlackboard.getOutLocalScan()->pitch_move_level,
-            mSentryBlackboard.getOutLocalScan()->yaw_move_level);
+            mSentryBlackboard->getOutLocalScan()->yaw,
+            mSentryBlackboard->getOutLocalScan()->pitch_move_level,
+            mSentryBlackboard->getOutLocalScan()->yaw_move_level);
+        mSentryBlackboard->getOutLocalScan()->is_update = false;
     }
 
-    if(mSentryBlackboard.getOutRelativeAngle() != NULL){
+    if(mSentryBlackboard->getOutRelativeAngle()->is_update){
         pRobotModel->getpSerialInterface()->yuntaiRelativeControl(
-            mSentryBlackboard.getOutRelativeAngle()->pitch,
-            mSentryBlackboard.getOutRelativeAngle()->yaw,
-            mSentryBlackboard.getOutRelativeAngle()->speed_signal);
+            mSentryBlackboard->getOutRelativeAngle()->pitch,
+            mSentryBlackboard->getOutRelativeAngle()->yaw,
+            mSentryBlackboard->getOutRelativeAngle()->speed_signal);
+        mSentryBlackboard->getOutRelativeAngle()->is_update = false;
     }
 }

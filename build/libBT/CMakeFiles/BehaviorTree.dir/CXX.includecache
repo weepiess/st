@@ -19,8 +19,10 @@ vector
 -
 iostream
 -
-blackboard.h
-../libBT/include/blackboard.h
+sentry_blackboard.h
+../libBT/include/sentry_blackboard.h
+log.h
+../libBT/include/log.h
 
 ../libBT/include/behavior_tree.h
 action_node.h
@@ -36,12 +38,6 @@ parallel_node.h
 selector_node.h
 -
 sequence_node.h
--
-
-../libBT/include/blackboard.h
-log.h
-../libBT/include/log.h
-memory
 -
 
 ../libBT/include/composite_node.h
@@ -69,6 +65,12 @@ composite_node.h
 -
 precondition_node.h
 -
+
+../libBT/include/sentry_blackboard.h
+memory
+-
+log.h
+../libBT/include/log.h
 
 ../libBT/include/sequence_node.h
 composite_node.h
