@@ -96,7 +96,21 @@ behavior_tree.h
 behavior_node_test.h
 ../libSentryAutoAim/include/behavior_node_test.h
 
+../libSentryAutoAim/include/kalman_filter_by_opencv.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
 /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_node_test.cpp
 behavior_tree_test.h
 -
+
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_tree_test.cpp
+behavior_tree_test.h
+-
+
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp
+kalman_filter_by_opencv.h
+/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.h
 
