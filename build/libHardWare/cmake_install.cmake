@@ -1,4 +1,4 @@
-# Install script for directory: /home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libHardWare
+# Install script for directory: /home/wyx/程序/sentry_autoaim/libHardWare
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,11 +32,16 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libHardWare/serialPort/cmake_install.cmake")
-  include("/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libHardWare/usbCapture/cmake_install.cmake")
-  include("/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libHardWare/mindVision/cmake_install.cmake")
+  include("/home/wyx/程序/sentry_autoaim/build/libHardWare/serialPort/cmake_install.cmake")
+  include("/home/wyx/程序/sentry_autoaim/build/libHardWare/usbCapture/cmake_install.cmake")
+  include("/home/wyx/程序/sentry_autoaim/build/libHardWare/mindVision/cmake_install.cmake")
 
 endif()
 

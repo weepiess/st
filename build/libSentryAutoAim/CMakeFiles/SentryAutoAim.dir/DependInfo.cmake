@@ -4,22 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libSentryAutoAim/src/action_behavior.cpp" "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/action_behavior.cpp.o"
-  "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libSentryAutoAim/src/decision.cpp" "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/decision.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_node_test.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_tree_test.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../libBase/baseLog/include"
+  "/usr/local/include/glog"
   "../include"
   "../libHardWare/serialPort/include"
   "../libHardWare/usbCapture/include"
   "../libHardWare/mindVision/include"
-  "../libBase/baseTools/include"
   "../libBase/baseClasses/include"
-  "../libAim/autoAim/include"
-  "../libAim/markAim/include"
+  "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
   "../libSentryAutoAim/./include"

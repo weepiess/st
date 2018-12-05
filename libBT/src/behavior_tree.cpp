@@ -5,7 +5,6 @@ void bt::BehaviorTree::execute(){
     initBT();
     running_ = true;
     mTreeThread = new std::thread(&BehaviorTree::executeInThread, this);
-    
 }
 
 void bt::BehaviorTree::stop(){

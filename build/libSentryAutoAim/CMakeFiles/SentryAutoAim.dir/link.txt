@@ -1,2 +1,2 @@
-/usr/bin/ar qc libSentryAutoAim.a  CMakeFiles/SentryAutoAim.dir/src/action_behavior.cpp.o CMakeFiles/SentryAutoAim.dir/src/decision.cpp.o
+/usr/bin/ar qc libSentryAutoAim.a  CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o
 /usr/bin/ranlib libSentryAutoAim.a

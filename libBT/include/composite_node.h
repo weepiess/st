@@ -7,7 +7,7 @@ namespace bt{
 
 class CompositeNode: public BehaviorNode{
 public:
-    CompositeNode(std::string name, BehaviorType behavior_type, const Blackboard::Ptr &blackboard_ptr):
+    CompositeNode(std::string name, BehaviorType behavior_type, const SentryBlackboard::Ptr &blackboard_ptr):
       BehaviorNode::BehaviorNode(name, behavior_type, blackboard_ptr),
       children_node_index_(0) {}
 
@@ -24,8 +24,8 @@ public:
     unsigned int getChildrenNum();
 
 protected:
-    virtual BehaviorState update() = 0;
     virtual void onInitialize() = 0;
+    virtual bt::BehaviorState update() = 0;
     virtual void onTerminate(BehaviorState state) = 0;
 
     std::vector<BehaviorNode::Ptr> children_node_ptr_;

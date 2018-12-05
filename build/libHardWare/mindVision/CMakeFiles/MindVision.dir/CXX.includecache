@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -30,7 +30,7 @@ stdio.h
 iostream
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libHardWare/mindVision/src/mind_vision.cpp
+/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.cpp
 mind_vision.h
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libHardWare/mindVision/src/mind_vision.h
+/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.h
 

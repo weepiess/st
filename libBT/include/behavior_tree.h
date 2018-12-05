@@ -15,13 +15,10 @@ namespace bt{
 
 class BehaviorTree{
 public:
-    BehaviorTree(const Blackboard::Ptr& blackboard_ptr, int cycle_duration):
+    BehaviorTree(const SentryBlackboard::Ptr& blackboard_ptr, int cycle_duration):
         blackboard_ptr(blackboard_ptr),
         cycle_duration_(cycle_duration),
         running_(false) {}
-
-    
-    
 
     void execute();
 
@@ -32,13 +29,13 @@ protected:
     virtual void initBT() = 0;
 
     void executeInThread();
+
     BehaviorNode::Ptr root_node_ptr;
-    Blackboard::Ptr blackboard_ptr; //该指针需要传给每个创建的节点
-    std::thread* mTreeThread;
+    SentryBlackboard::Ptr blackboard_ptr; //该指针需要传给每个创建的节点
     std::chrono::milliseconds cycle_duration_;
     bool running_;
 
-    
+    std::thread* mTreeThread;
 }; //class
 }; //namespace bt
 

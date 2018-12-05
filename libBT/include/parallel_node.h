@@ -7,7 +7,7 @@ namespace bt{
 
 class ParallelNode: public CompositeNode{
 public:
-    ParallelNode(std::string name, const Blackboard::Ptr &blackboard_ptr, unsigned int threshold):
+    ParallelNode(std::string name, const SentryBlackboard::Ptr &blackboard_ptr, unsigned int threshold):
         CompositeNode::CompositeNode(name, BehaviorType::PARALLEL, blackboard_ptr),
         threshold_(threshold),
         success_count_(0),

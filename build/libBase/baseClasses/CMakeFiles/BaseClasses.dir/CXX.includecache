@@ -1,10 +1,12 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
+
+../libBase/baseClasses/include/aim_params.h
 
 ../libBase/baseClasses/include/base_aim.h
 opencv2/opencv.hpp
@@ -14,6 +16,8 @@ pnp_solver.h
 image_tool.h
 -
 iostream
+-
+aim_params.h
 -
 
 ../libBase/baseClasses/include/base_thread.h
@@ -38,11 +42,11 @@ opencv2/opencv.hpp
 iostream
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_aim.cpp
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_aim.cpp
 base_aim.h
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_aim.h
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_aim.h
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_thread.cpp
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.cpp
 base_thread.h
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_thread.h
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.h
 

@@ -1,34 +1,10 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
-
-../libAim/autoAim/include/aim_predict.h
-kalman_filter_by_opencv.h
-../libAim/autoAim/include/kalman_filter_by_opencv.h
-opencv2/opencv.hpp
-../libAim/autoAim/include/opencv2/opencv.hpp
-
-../libAim/autoAim/include/auto_aim.h
-opencv2/opencv.hpp
--
-base_aim.h
-../libAim/autoAim/include/base_aim.h
-time.h
-../libAim/autoAim/include/time.h
-aim_predict.h
-../libAim/autoAim/include/aim_predict.h
-usb_capture_with_opencv.h
-../libAim/autoAim/include/usb_capture_with_opencv.h
-
-../libAim/autoAim/include/kalman_filter_by_opencv.h
-opencv2/opencv.hpp
--
-iostream
--
 
 ../libBT/include/action_node.h
 behavior_node.h
@@ -43,8 +19,10 @@ vector
 -
 iostream
 -
-blackboard.h
-../libBT/include/blackboard.h
+sentry_blackboard.h
+../libBT/include/sentry_blackboard.h
+log.h
+../libBT/include/log.h
 
 ../libBT/include/behavior_tree.h
 action_node.h
@@ -61,16 +39,6 @@ selector_node.h
 -
 sequence_node.h
 -
-
-../libBT/include/blackboard.h
-log.h
-../libBT/include/log.h
-memory
--
-opencv2/opencv.hpp
-../libBT/include/opencv2/opencv.hpp
-auto_aim.h
-../libBT/include/auto_aim.h
 
 ../libBT/include/composite_node.h
 behavior_node.h
@@ -98,35 +66,15 @@ composite_node.h
 precondition_node.h
 -
 
+../libBT/include/sentry_blackboard.h
+memory
+-
+log.h
+../libBT/include/log.h
+
 ../libBT/include/sequence_node.h
 composite_node.h
 -
-
-../libBase/baseClasses/include/base_aim.h
-opencv2/opencv.hpp
--
-pnp_solver.h
--
-image_tool.h
--
-iostream
--
-
-../libBase/baseClasses/include/base_thread.h
-unistd.h
--
-iostream
--
-pthread.h
--
-
-../libBase/baseTools/include/image_tool.h
-opencv2/opencv.hpp
-../libBase/baseTools/include/opencv2/opencv.hpp
-sys/time.h
-../libBase/baseTools/include/sys/time.h
-time.h
-../libBase/baseTools/include/time.h
 
 ../libBase/baseTools/include/log.h
 glog/logging.h
@@ -136,47 +84,35 @@ glog/raw_logging.h
 fstream
 -
 
-../libBase/baseTools/include/pnp_solver.h
-opencv2/opencv.hpp
--
-iostream
--
-
-../libHardWare/usbCapture/include/usb_capture_with_opencv.h
-opencv2/opencv.hpp
--
-base_thread.h
-../libHardWare/usbCapture/include/base_thread.h
-
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/behavior_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.cpp
 behavior_node.h
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/behavior_node.h
+/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.h
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/behavior_tree.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/behavior_tree.cpp
 behavior_tree.h
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/blackboard.cpp
-blackboard.h
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/blackboard.h
-
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/composite_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/composite_node.cpp
 composite_node.h
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/parallel_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/parallel_node.cpp
 parallel_node.h
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/precondition_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/precondition_node.cpp
 precondition_node.h
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/selector_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/selector_node.cpp
 selector_node.h
 -
 
-/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBT/src/sequence_node.cpp
+/home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp
+sentry_blackboard.h
+-
+
+/home/wyx/程序/sentry_autoaim/libBT/src/sequence_node.cpp
 sequence_node.h
 -
 
