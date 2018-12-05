@@ -4,20 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_aim.cpp" "/home/wyx/程序/sentry_autoaim/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.cpp" "/home/wyx/程序/sentry_autoaim/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o"
+  "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_aim.cpp" "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o"
+  "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase/baseClasses/src/base_thread.cpp" "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/glog"
+  "../libBase/baseLog/include"
   "../include"
   "../libHardWare/serialPort/include"
   "../libHardWare/usbCapture/include"
   "../libHardWare/mindVision/include"
-  "../libBase/baseClasses/include"
   "../libBase/baseTools/include"
+  "../libBase/baseClasses/include"
+  "../libAim/autoAim/include"
+  "../libAim/markAim/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
   "../libBase/baseClasses/./include"

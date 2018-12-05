@@ -22,12 +22,11 @@ ControlModel::~ControlModel(){
 }
 
 void ControlModel::init(RobotModel* robotModel){
+    mBehaviorTree = new Decision(mBlackboard, 25);
     pRobotModel=robotModel;
-
-    //auto blackboard_ptr = std::make_shared<SentryBlackboard>(mSentryBlackboard);
-    mBehaviorTree = new BehaviorTreeTest(mSentryBlackboard, 25);
-
     mSetMode=ROBOT_MODE_AUTO;
+    pRobotModel->getVisionCapture()->init();
+    pRobotModel->getVisionCapture()->startPlay(pRobotModel->isEnemyRed());
 }
 
 //串口数据接收处理入口
@@ -35,15 +34,18 @@ void ControlModel::serialListenDataProcess(SerialPacket recvPacket) {
 //复杂自定义数据包，需要自定义解析单独处理
     //debug
     //SerialPortDebug::testSerialPortListenPrint(recvPacket);
+    Mat src;
     unsigned char CMD = recvPacket.getCMD();
     // cout<<"CMD:"<<(int)CMD<<endl;
     if(CMD_SERIAL_BLOOD_INFO_RECV == CMD){
-        mSentryBlackboard->updateBloodInfo(recvPacket.getIntInBuffer(2), recvPacket.getIntInBuffer(6),
+        mBlackboard->updateBloodInfo(recvPacket.getIntInBuffer(2), recvPacket.getIntInBuffer(6),
             recvPacket.getUncharInBuffer(10), recvPacket.getUncharInBuffer(11));
     } else if(CMD_SERIAL_CHASSIS_INFO_RECV == CMD){
-        mSentryBlackboard->updateChassisInfo(recvPacket.getFloatInBuffer(2), recvPacket.getFloatInBuffer(6),
+        mBlackboard->updateChassisInfo(recvPacket.getFloatInBuffer(2), recvPacket.getFloatInBuffer(6),
             recvPacket.getShortIntInBuffer(10), recvPacket.getUncharInBuffer(12));
     }
+    pRobotModel->getVisionCapture()->getImg(src);
+    mBlackboard->updateImg(src);
 }
 
 void ControlModel::processFSM(){
@@ -87,59 +89,59 @@ void ControlModel::processFSM(){
 }
 
 void ControlModel::serialSendDataProcess(){
-    if(mSentryBlackboard->getOutChassisPos()->is_update){
+    if(mBlackboard->getOutChassisPos() != NULL){
         pRobotModel->getpSerialInterface()->chassisPosSet(
-            mSentryBlackboard->getOutChassisPos()->pos_to_move,
-            mSentryBlackboard->getOutChassisPos()->move_level);
-        mSentryBlackboard->getOutChassisPos()->is_update = false;
+            mBlackboard->getOutChassisPos()->pos_to_move,
+            mBlackboard->getOutChassisPos()->move_level);
+            mBlackboard->getOutChassisPos()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutChassisConstMove()->is_update){
+    if(mBlackboard->getOutChassisConstMove() != NULL){
         pRobotModel->getpSerialInterface()->chassisConstMove(
-            mSentryBlackboard->getOutChassisConstMove()->move_level);
-        mSentryBlackboard->getOutChassisConstMove()->is_update = false;
+            mBlackboard->getOutChassisConstMove()->move_level);
+            mBlackboard->getOutChassisConstMove()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutChassisRandomMove()->is_update){
+    if(mBlackboard->getOutChassisRandomMove() != NULL){
         pRobotModel->getpSerialInterface()->chassisRandomMove(
-            mSentryBlackboard->getOutChassisRandomMove()->move_level,
-            mSentryBlackboard->getOutChassisRandomMove()->min_pos,
-            mSentryBlackboard->getOutChassisRandomMove()->max_pos);
-        mSentryBlackboard->getOutChassisRandomMove()->is_update = false;
+            mBlackboard->getOutChassisRandomMove()->move_level,
+            mBlackboard->getOutChassisRandomMove()->min_pos,
+            mBlackboard->getOutChassisRandomMove()->max_pos);
+            mBlackboard->getOutChassisRandomMove()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutChassisSwingMove()->is_update){
+    if(mBlackboard->getOutChassisSwingMove() != NULL){
         pRobotModel->getpSerialInterface()->chassisSwingMove(
-            mSentryBlackboard->getOutChassisSwingMove()->move_level);
-        mSentryBlackboard->getOutChassisSwingMove()->is_update = false;
+            mBlackboard->getOutChassisSwingMove()->move_level);
+            mBlackboard->getOutChassisSwingMove()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutShoot()->is_update){
+    if(mBlackboard->getOutShoot() != NULL){
         pRobotModel->getpSerialInterface()->shoot(
-            mSentryBlackboard->getOutShoot()->bullet_count);
-        mSentryBlackboard->getOutShoot()->is_update = false;
+            mBlackboard->getOutShoot()->bullet_count);
+            mBlackboard->getOutShoot()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutGlobalScan()->is_update){
+    if(mBlackboard->getOutGlobalScan() != NULL){
         pRobotModel->getpSerialInterface()->globalScanning(
-            mSentryBlackboard->getOutGlobalScan()->pitch_move_level,
-            mSentryBlackboard->getOutGlobalScan()->yaw_move_level);
-        mSentryBlackboard->getOutGlobalScan()->is_update = false;
+            mBlackboard->getOutGlobalScan()->pitch_move_level,
+            mBlackboard->getOutGlobalScan()->yaw_move_level);
+            mBlackboard->getOutGlobalScan()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutLocalScan()->is_update){
+    if(mBlackboard->getOutLocalScan() != NULL){
         pRobotModel->getpSerialInterface()->localScanning(
-            mSentryBlackboard->getOutLocalScan()->yaw,
-            mSentryBlackboard->getOutLocalScan()->pitch_move_level,
-            mSentryBlackboard->getOutLocalScan()->yaw_move_level);
-        mSentryBlackboard->getOutLocalScan()->is_update = false;
+            mBlackboard->getOutLocalScan()->yaw,
+            mBlackboard->getOutLocalScan()->pitch_move_level,
+            mBlackboard->getOutLocalScan()->yaw_move_level);
+            mBlackboard->getOutLocalScan()->is_update = false;
     }
 
-    if(mSentryBlackboard->getOutRelativeAngle()->is_update){
+    if(mBlackboard->getOutRelativeAngle() != NULL){
         pRobotModel->getpSerialInterface()->yuntaiRelativeControl(
-            mSentryBlackboard->getOutRelativeAngle()->pitch,
-            mSentryBlackboard->getOutRelativeAngle()->yaw,
-            mSentryBlackboard->getOutRelativeAngle()->speed_signal);
-        mSentryBlackboard->getOutRelativeAngle()->is_update = false;
+            mBlackboard->getOutRelativeAngle()->pitch,
+            mBlackboard->getOutRelativeAngle()->yaw,
+            mBlackboard->getOutRelativeAngle()->speed_signal);
+            mBlackboard->getOutRelativeAngle()->is_update = false;
     }
 }

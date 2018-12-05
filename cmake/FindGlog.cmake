@@ -1,13 +1,13 @@
 include(FindPackageHandleStandardArgs)
 
-set(GLOG_ROOT_DIR "/usr/local/")
+set(GLOG_ROOT_DIR "${PROJECT_SOURCE_DIR}/libBase/baseLog/")
 
 find_path(GLOG_INCLUDE_DIR logging.h
-        PATHS ${GLOG_ROOT_DIR}/include/glog/)
+        PATHS ${GLOG_ROOT_DIR}/include)
 
 find_library(GLOG_LIBRARY glog
         PATHS ${GLOG_ROOT_DIR}/lib
-        PATH_SUFFIXES lib lib64)
+        PATH_SUFFIXES lib)
 
 find_package_handle_standard_args(Glog DEFAULT_MSG GLOG_INCLUDE_DIR GLOG_LIBRARY)
 

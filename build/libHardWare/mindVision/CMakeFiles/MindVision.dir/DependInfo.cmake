@@ -4,19 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.cpp" "/home/wyx/程序/sentry_autoaim/build/libHardWare/mindVision/CMakeFiles/MindVision.dir/src/mind_vision.cpp.o"
+  "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libHardWare/mindVision/src/mind_vision.cpp" "/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libHardWare/mindVision/CMakeFiles/MindVision.dir/src/mind_vision.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/glog"
+  "../libBase/baseLog/include"
   "../include"
   "../libHardWare/serialPort/include"
   "../libHardWare/usbCapture/include"
   "../libHardWare/mindVision/include"
-  "../libBase/baseClasses/include"
   "../libBase/baseTools/include"
+  "../libBase/baseClasses/include"
+  "../libAim/autoAim/include"
+  "../libAim/markAim/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
   "../libHardWare/mindVision/./include"

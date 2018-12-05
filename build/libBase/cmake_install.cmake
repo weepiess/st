@@ -1,4 +1,4 @@
-# Install script for directory: /home/wyx/程序/sentry_autoaim/libBase
+# Install script for directory: /home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/libBase
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,15 +32,10 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wyx/程序/sentry_autoaim/build/libBase/baseClasses/cmake_install.cmake")
-  include("/home/wyx/程序/sentry_autoaim/build/libBase/baseTools/cmake_install.cmake")
+  include("/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libBase/baseTools/cmake_install.cmake")
+  include("/home/pc/PROJECT/RM_TRAIN_PROJECT/st-master/build/libBase/baseClasses/cmake_install.cmake")
 
 endif()
 

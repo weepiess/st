@@ -24,7 +24,7 @@ class BaseThread
 {  
 public:
       //构造函数  
-    BaseThread();
+    BaseThread(); 
 private:  
     //当前线程的线程ID  
     pthread_t tid;  
@@ -33,7 +33,7 @@ private:
     //获取执行方法的指针  
     static void * thread_proxy_func(void * args);  
     //内部执行方法  
-    void* run1();
+    void* run1();  
 public:  
     //线程的状态－新建  
     static const int THREAD_STATUS_NEW = 0;  

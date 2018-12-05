@@ -16,9 +16,10 @@
 #define RMDEMO_CONTROL_MODEL_H
 #include "robot_model.h"
 #include <opencv2/opencv.hpp>
-#include "sentry_blackboard.h"
-#include "behavior_tree_test.h"
-
+#include "blackboard.h"
+#include "mind_vision.h"
+#include "decision.h"
+using namespace bt;
 class ControlModel{
 public:
     ControlModel();
@@ -35,9 +36,11 @@ private:
     //临时变量，记录上次的状态
     RobotMode mSetMode;
     RobotModel* pRobotModel;
-
-    SentryBlackboard::Ptr mSentryBlackboard = std::make_shared<SentryBlackboard>();
-    BehaviorTreeTest* mBehaviorTree;
+    int hCamera;
+    MindVision mVision;
+    bool mEnemyIsRed;
+    Blackboard::Ptr mBlackboard = std::make_shared<Blackboard>();
+    Decision* mBehaviorTree;
 };
 
 #endif //RMDEMO_CONTROL_MODEL_H
