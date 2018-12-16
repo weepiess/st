@@ -57,22 +57,9 @@ include CMakeFiles/kxjh.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/kxjh.dir/flags.make
 
-CMakeFiles/kxjh.dir/src/control_model.cpp.o: CMakeFiles/kxjh.dir/flags.make
-CMakeFiles/kxjh.dir/src/control_model.cpp.o: ../src/control_model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kxjh.dir/src/control_model.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kxjh.dir/src/control_model.cpp.o -c /home/wyx/程序/sentry_autoaim/src/control_model.cpp
-
-CMakeFiles/kxjh.dir/src/control_model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kxjh.dir/src/control_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/src/control_model.cpp > CMakeFiles/kxjh.dir/src/control_model.cpp.i
-
-CMakeFiles/kxjh.dir/src/control_model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kxjh.dir/src/control_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/src/control_model.cpp -o CMakeFiles/kxjh.dir/src/control_model.cpp.s
-
 CMakeFiles/kxjh.dir/src/main.cpp.o: CMakeFiles/kxjh.dir/flags.make
 CMakeFiles/kxjh.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kxjh.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kxjh.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kxjh.dir/src/main.cpp.o -c /home/wyx/程序/sentry_autoaim/src/main.cpp
 
 CMakeFiles/kxjh.dir/src/main.cpp.i: cmake_force
@@ -83,46 +70,14 @@ CMakeFiles/kxjh.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kxjh.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/src/main.cpp -o CMakeFiles/kxjh.dir/src/main.cpp.s
 
-CMakeFiles/kxjh.dir/src/robot_model.cpp.o: CMakeFiles/kxjh.dir/flags.make
-CMakeFiles/kxjh.dir/src/robot_model.cpp.o: ../src/robot_model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kxjh.dir/src/robot_model.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kxjh.dir/src/robot_model.cpp.o -c /home/wyx/程序/sentry_autoaim/src/robot_model.cpp
-
-CMakeFiles/kxjh.dir/src/robot_model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kxjh.dir/src/robot_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/src/robot_model.cpp > CMakeFiles/kxjh.dir/src/robot_model.cpp.i
-
-CMakeFiles/kxjh.dir/src/robot_model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kxjh.dir/src/robot_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/src/robot_model.cpp -o CMakeFiles/kxjh.dir/src/robot_model.cpp.s
-
-CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o: CMakeFiles/kxjh.dir/flags.make
-CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o: ../src/serial_listen_thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o -c /home/wyx/程序/sentry_autoaim/src/serial_listen_thread.cpp
-
-CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/src/serial_listen_thread.cpp > CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.i
-
-CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/src/serial_listen_thread.cpp -o CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.s
-
 # Object files for target kxjh
 kxjh_OBJECTS = \
-"CMakeFiles/kxjh.dir/src/control_model.cpp.o" \
-"CMakeFiles/kxjh.dir/src/main.cpp.o" \
-"CMakeFiles/kxjh.dir/src/robot_model.cpp.o" \
-"CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o"
+"CMakeFiles/kxjh.dir/src/main.cpp.o"
 
 # External object files for target kxjh
 kxjh_EXTERNAL_OBJECTS =
 
-kxjh: CMakeFiles/kxjh.dir/src/control_model.cpp.o
 kxjh: CMakeFiles/kxjh.dir/src/main.cpp.o
-kxjh: CMakeFiles/kxjh.dir/src/robot_model.cpp.o
-kxjh: CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o
 kxjh: CMakeFiles/kxjh.dir/build.make
 kxjh: libHardWare/serialPort/libSerialPort.a
 kxjh: libHardWare/usbCapture/libUsbCapture.a
@@ -140,6 +95,11 @@ kxjh: /usr/local/lib/libopencv_dnn.so.3.4.3
 kxjh: /usr/local/lib/libopencv_ml.so.3.4.3
 kxjh: /usr/local/lib/libopencv_calib3d.so.3.4.3
 kxjh: /usr/local/lib/libopencv_superres.so.3.4.3
+kxjh: libHardWare/serialPort/libSerialPort.a
+kxjh: libHardWare/usbCapture/libUsbCapture.a
+kxjh: libHardWare/mindVision/libMindVision.a
+kxjh: libBase/baseClasses/libBaseClasses.a
+kxjh: libBase/baseTools/libBaseTools.a
 kxjh: /usr/local/lib/libglog.so
 kxjh: /usr/local/lib/libopencv_features2d.so.3.4.3
 kxjh: /usr/local/lib/libopencv_flann.so.3.4.3
@@ -150,7 +110,7 @@ kxjh: /usr/local/lib/libopencv_imgcodecs.so.3.4.3
 kxjh: /usr/local/lib/libopencv_imgproc.so.3.4.3
 kxjh: /usr/local/lib/libopencv_core.so.3.4.3
 kxjh: CMakeFiles/kxjh.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable kxjh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable kxjh"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kxjh.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

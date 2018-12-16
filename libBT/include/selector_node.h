@@ -1,14 +1,14 @@
 #ifndef LIBBT_SELECTOR_NODE_H
 #define LIBBT_SELECTOR_NODE_H
 
-#include <composite_node.h>
-#include <precondition_node.h>
+#include "composite_node.h"
+#include "precondition_node.h"
 
 namespace bt{
 
 class SelectorNode: public CompositeNode{
 public:
-    SelectorNode(std::string name, const SentryBlackboard::Ptr &blackboard_ptr):
+    SelectorNode(std::string name, const Blackboard::Ptr &blackboard_ptr):
         CompositeNode::CompositeNode(name, BehaviorType::SELECTOR, blackboard_ptr) {}
 
     virtual ~SelectorNode() = default;

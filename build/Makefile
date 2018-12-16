@@ -214,33 +214,6 @@ SentryAutoAim/fast:
 	$(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build
 .PHONY : SentryAutoAim/fast
 
-src/control_model.o: src/control_model.cpp.o
-
-.PHONY : src/control_model.o
-
-# target to build an object file
-src/control_model.cpp.o:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/control_model.cpp.o
-.PHONY : src/control_model.cpp.o
-
-src/control_model.i: src/control_model.cpp.i
-
-.PHONY : src/control_model.i
-
-# target to preprocess a source file
-src/control_model.cpp.i:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/control_model.cpp.i
-.PHONY : src/control_model.cpp.i
-
-src/control_model.s: src/control_model.cpp.s
-
-.PHONY : src/control_model.s
-
-# target to generate assembly for a file
-src/control_model.cpp.s:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/control_model.cpp.s
-.PHONY : src/control_model.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -268,60 +241,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/robot_model.o: src/robot_model.cpp.o
-
-.PHONY : src/robot_model.o
-
-# target to build an object file
-src/robot_model.cpp.o:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/robot_model.cpp.o
-.PHONY : src/robot_model.cpp.o
-
-src/robot_model.i: src/robot_model.cpp.i
-
-.PHONY : src/robot_model.i
-
-# target to preprocess a source file
-src/robot_model.cpp.i:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/robot_model.cpp.i
-.PHONY : src/robot_model.cpp.i
-
-src/robot_model.s: src/robot_model.cpp.s
-
-.PHONY : src/robot_model.s
-
-# target to generate assembly for a file
-src/robot_model.cpp.s:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/robot_model.cpp.s
-.PHONY : src/robot_model.cpp.s
-
-src/serial_listen_thread.o: src/serial_listen_thread.cpp.o
-
-.PHONY : src/serial_listen_thread.o
-
-# target to build an object file
-src/serial_listen_thread.cpp.o:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o
-.PHONY : src/serial_listen_thread.cpp.o
-
-src/serial_listen_thread.i: src/serial_listen_thread.cpp.i
-
-.PHONY : src/serial_listen_thread.i
-
-# target to preprocess a source file
-src/serial_listen_thread.cpp.i:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.i
-.PHONY : src/serial_listen_thread.cpp.i
-
-src/serial_listen_thread.s: src/serial_listen_thread.cpp.s
-
-.PHONY : src/serial_listen_thread.s
-
-# target to generate assembly for a file
-src/serial_listen_thread.cpp.s:
-	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.s
-.PHONY : src/serial_listen_thread.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -338,18 +257,9 @@ help:
 	@echo "... MindVision"
 	@echo "... BehaviorTree"
 	@echo "... SentryAutoAim"
-	@echo "... src/control_model.o"
-	@echo "... src/control_model.i"
-	@echo "... src/control_model.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/robot_model.o"
-	@echo "... src/robot_model.i"
-	@echo "... src/robot_model.s"
-	@echo "... src/serial_listen_thread.o"
-	@echo "... src/serial_listen_thread.i"
-	@echo "... src/serial_listen_thread.s"
 .PHONY : help
 
 

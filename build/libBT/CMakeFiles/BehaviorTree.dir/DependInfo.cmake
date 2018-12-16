@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wyx/程序/sentry_autoaim/libBT/src/parallel_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/parallel_node.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/precondition_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/precondition_node.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/selector_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/sequence_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -26,11 +25,17 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
+  "../libSentryAutoAim/include/test"
   "../libBT/./include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/wyx/程序/sentry_autoaim/build/libBase/baseTools/CMakeFiles/BaseTools.dir/DependInfo.cmake"
+  "/home/wyx/程序/sentry_autoaim/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/DependInfo.cmake"
+  "/home/wyx/程序/sentry_autoaim/build/libHardWare/serialPort/CMakeFiles/SerialPort.dir/DependInfo.cmake"
+  "/home/wyx/程序/sentry_autoaim/build/libHardWare/usbCapture/CMakeFiles/UsbCapture.dir/DependInfo.cmake"
+  "/home/wyx/程序/sentry_autoaim/build/libHardWare/mindVision/CMakeFiles/MindVision.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

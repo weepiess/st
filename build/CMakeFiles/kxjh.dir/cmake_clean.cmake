@@ -1,8 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kxjh.dir/src/control_model.cpp.o"
   "CMakeFiles/kxjh.dir/src/main.cpp.o"
-  "CMakeFiles/kxjh.dir/src/robot_model.cpp.o"
-  "CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o"
   "kxjh.pdb"
   "kxjh"
 )

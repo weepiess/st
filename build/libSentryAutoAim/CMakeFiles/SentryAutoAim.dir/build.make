@@ -57,60 +57,120 @@ include libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/progress.make
 # Include the compile flags for this target's objects.
 include libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o: ../libSentryAutoAim/src/behavior_node_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_node_test.cpp
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o: ../libSentryAutoAim/src/avoid_enemy_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/avoid_enemy_action.cpp
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.i"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_node_test.cpp > CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.i
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/avoid_enemy_action.cpp > CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.i
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.s"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_node_test.cpp -o CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.s
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/avoid_enemy_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.s
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o: ../libSentryAutoAim/src/behavior_tree_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_tree_test.cpp
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o: ../libSentryAutoAim/src/behavior_test_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_test_action.cpp
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.i"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_tree_test.cpp > CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.i
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_test_action.cpp > CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.i
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.s"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_tree_test.cpp -o CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.s
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_test_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.s
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o: ../libSentryAutoAim/src/kalman_filter_by_opencv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o: ../libSentryAutoAim/src/distinguish_armor_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/distinguish_armor_action.cpp
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.i"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp > CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.i
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/distinguish_armor_action.cpp > CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.i
 
-libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.s"
-	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/kalman_filter_by_opencv.cpp -o CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.s
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/distinguish_armor_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.s
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o: ../libSentryAutoAim/src/enemy_detect_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/enemy_detect_action.cpp
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/enemy_detect_action.cpp > CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.i
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/enemy_detect_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.s
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o: ../libSentryAutoAim/src/escape_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/escape_action.cpp
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/escape_action.cpp > CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.i
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/escape_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.s
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o: ../libSentryAutoAim/src/fast_patrol_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/fast_patrol_action.cpp
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/fast_patrol_action.cpp > CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.i
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/fast_patrol_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.s
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/flags.make
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o: ../libSentryAutoAim/src/shooting_single_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o -c /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/shooting_single_action.cpp
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/shooting_single_action.cpp > CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.i
+
+libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/shooting_single_action.cpp -o CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.s
 
 # Object files for target SentryAutoAim
 SentryAutoAim_OBJECTS = \
-"CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o" \
-"CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o" \
-"CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o"
+"CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o" \
+"CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o"
 
 # External object files for target SentryAutoAim
 SentryAutoAim_EXTERNAL_OBJECTS =
 
-libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o
-libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o
-libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o
+libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o
 libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make
 libSentryAutoAim/libSentryAutoAim.a: libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libSentryAutoAim.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libSentryAutoAim.a"
 	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && $(CMAKE_COMMAND) -P CMakeFiles/SentryAutoAim.dir/cmake_clean_target.cmake
 	cd /home/wyx/程序/sentry_autoaim/build/libSentryAutoAim && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SentryAutoAim.dir/link.txt --verbose=$(VERBOSE)
 

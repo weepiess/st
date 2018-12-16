@@ -10,15 +10,22 @@
 ///修订历史：
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef SENTRYDEMO_BASIC_TOOL_H
-#define SENTRYDEMO_BASIC_TOOL_H
-#include <sys/time.h>
+#ifndef BASIC_TOOL_H
+#define BASIC_TOOL_H
+
+#include "opencv2/opencv.hpp"
+
 class BasicTool{
 public:
-    static struct timeval start;
-    static struct timeval startInitGet();
-    //获取当前时间距离程序启动时间的时间差
-    static int currentTimeMsGet();
+    static double gravityKiller(double z_distance, double y_distance, double bullet_speed, double current_pitch);
+
+    static float calc2PointDistance(cv::Point2f point1,cv::Point2f point2);
+    //计算两点间的近似距离，用两个直角边的和近似代替斜边的长度
+    static float calc2PointApproDistance(cv::Point2f point1, cv::Point2f point2);
+
+    static float calc2PointAngle(cv::Point2f point1,cv::Point2f point2);
+
+    static float calcTriangleInnerAngle(cv::Point2f vertexPoint,cv::Point2f point1,cv::Point2f point2);
 };
 
 #endif //SENTRYDEMO_BASIC_TOOL_H

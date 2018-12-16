@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SentryAutoAim.dir/src/behavior_node_test.cpp.o"
-  "CMakeFiles/SentryAutoAim.dir/src/behavior_tree_test.cpp.o"
-  "CMakeFiles/SentryAutoAim.dir/src/kalman_filter_by_opencv.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o"
+  "CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o"
   "libSentryAutoAim.pdb"
   "libSentryAutoAim.a"
 )

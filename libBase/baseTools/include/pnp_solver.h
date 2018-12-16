@@ -47,7 +47,7 @@ public:
      * SOLVEPNP_ITERATIVE速度较慢，并且三维坐标的四个点必须共面
      * SOLVEPNP_P3P和SOLVEPNP_EPNP不要求点共面，P3P适用于四个点的情况，EPNP适用于五个点及以上的情况
      */
-    void solvePnP(bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE);
+    bool solvePnP(bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE);
     Point3d getTvec();
 
     //debug用于输出所有的参数

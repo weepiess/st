@@ -4,10 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wyx/程序/sentry_autoaim/src/control_model.cpp" "/home/wyx/程序/sentry_autoaim/build/CMakeFiles/kxjh.dir/src/control_model.cpp.o"
   "/home/wyx/程序/sentry_autoaim/src/main.cpp" "/home/wyx/程序/sentry_autoaim/build/CMakeFiles/kxjh.dir/src/main.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/src/robot_model.cpp" "/home/wyx/程序/sentry_autoaim/build/CMakeFiles/kxjh.dir/src/robot_model.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/src/serial_listen_thread.cpp" "/home/wyx/程序/sentry_autoaim/build/CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
+  "../libSentryAutoAim/include/test"
   "/usr/local/include"
   "/usr/local/include/opencv"
   )

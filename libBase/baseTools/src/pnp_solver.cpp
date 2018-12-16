@@ -51,26 +51,31 @@ void PNPSolver::clearPoints2D(){
     Points2D.clear();
 }
 
-void PNPSolver::solvePnP(bool useExtrinsicGuess, int flags){
-    assert(!camera_matrix.empty() && !distortion_coef.empty());
+bool PNPSolver::solvePnP(bool useExtrinsicGuess, int flags){
+    if(!camera_matrix.empty() && !distortion_coef.empty())
+        return false;
     if(Points3D.size()==0){
         cout<<"Points3D has not initialized."<<endl;
-        return;
+        return false;
     }
     if(Points3D.size() != Points2D.size()){
         cout<<"Points.size() match error."<<endl;
-        return;
+        return false;
     }
     cv::solvePnP(Points3D, Points2D, camera_matrix, distortion_coef, rvec, tvec, useExtrinsicGuess, flags);
+    return true;
 }
 
 Point3d PNPSolver::getTvec(){
     Point3d temp;
-    assert(!tvec.empty());
-    //tvec返回的是double类型
-    temp.x = tvec.at<double>(0);
-    temp.y = tvec.at<double>(1);
-    temp.z = tvec.at<double>(2);
+    if(tvec.empty()){
+        temp.x = temp.y = temp.z = 0;
+    } else {
+        //tvec返回的是double类型
+        temp.x = tvec.at<double>(0);
+        temp.y = tvec.at<double>(1);
+        temp.z = tvec.at<double>(2);
+    }
     return temp;
 }
 

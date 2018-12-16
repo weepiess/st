@@ -6,7 +6,7 @@
 #include <vector>
 #include <iostream>
 
-#include "sentry_blackboard.h"
+#include "blackboard.h"
 #include "log.h"
 
 namespace bt{
@@ -43,7 +43,7 @@ class BehaviorNode : public std::enable_shared_from_this<BehaviorNode>{
 public:
     typedef std::shared_ptr<BehaviorNode> Ptr;
 
-    BehaviorNode(std::string name, BehaviorType behavior_type, const SentryBlackboard::Ptr &blackboard_ptr):
+    BehaviorNode(std::string name, BehaviorType behavior_type, const Blackboard::Ptr &blackboard_ptr):
         name_(name),
         behavior_type_(behavior_type),
         blackboard_ptr_(blackboard_ptr),
@@ -76,7 +76,7 @@ public:
     //! Type
     BehaviorType behavior_type_;
     //! Blackboard
-    SentryBlackboard::Ptr blackboard_ptr_;
+    Blackboard::Ptr blackboard_ptr_;
     //! Parent Node Pointer
     BehaviorNode::Ptr parent_node_ptr_;
 }; //class

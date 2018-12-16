@@ -47,6 +47,12 @@ int SerialInterface::dataRecv(SerialPacket &recvPacket){
 
 
 /*********************控制接口**************************/
+void SerialInterface::chassisStopSet(){
+    SerialPacket sendPacket;
+    sendPacket.creatPacket(CMD_SERIAL_CHASSIS_STOP);
+    dataSend(sendPacket);
+}
+
 void SerialInterface::chassisPosSet(short int pos_move, int move_level){
     SerialPacket sendPacket;
     sendPacket.creatPacket(CMD_SERIAL_CHASSIS_POS_CONTROL);

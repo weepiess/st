@@ -1,4 +1,4 @@
-#include <composite_node.h>
+#include "composite_node.h"
 
 void bt::CompositeNode::addChildren(const BehaviorNode::Ptr &child_node_ptr){
     children_node_ptr_.push_back(child_node_ptr);

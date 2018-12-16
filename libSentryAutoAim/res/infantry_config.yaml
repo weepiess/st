@@ -1,0 +1,19 @@
+%YAML:1.1
+#有差异
+red_sbstract_thresh: 100
+blue_sbstract_thresh: 110
+
+#没差异
+#灯条信息
+max_allow_angle: 45
+max_hw_ratio: 40
+min_hw_ratio: 1.5
+#装甲板信息
+max_diff_angle: 4
+max_yx_diff_ratio: 1
+max_height_ratio: 2
+max_dis_height_ratio: 10
+min_dis_height_ratio: 1
+
+img_width: 1280
+img_height: 720

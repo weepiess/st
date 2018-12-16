@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
+  "../libSentryAutoAim/include/test"
   "../libHardWare/serialPort/./include"
   )
 

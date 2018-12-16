@@ -1,13 +1,13 @@
 #ifndef LIBBT_COMPOSITE_NODE_H
 #define LIBBT_COMPOSITE_NODE_H
 
-#include <behavior_node.h>
+#include "behavior_node.h"
 
 namespace bt{
 
 class CompositeNode: public BehaviorNode{
 public:
-    CompositeNode(std::string name, BehaviorType behavior_type, const SentryBlackboard::Ptr &blackboard_ptr):
+    CompositeNode(std::string name, BehaviorType behavior_type, const Blackboard::Ptr &blackboard_ptr):
       BehaviorNode::BehaviorNode(name, behavior_type, blackboard_ptr),
       children_node_index_(0) {}
 

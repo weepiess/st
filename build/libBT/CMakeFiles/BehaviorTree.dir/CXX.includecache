@@ -19,8 +19,8 @@ vector
 -
 iostream
 -
-sentry_blackboard.h
-../libBT/include/sentry_blackboard.h
+blackboard.h
+../libBT/include/blackboard.h
 log.h
 ../libBT/include/log.h
 
@@ -39,6 +39,18 @@ selector_node.h
 -
 sequence_node.h
 -
+
+../libBT/include/blackboard.h
+memory
+-
+vector
+-
+base_aim.h
+-
+log.h
+../libBT/include/log.h
+opencv2/opencv.hpp
+../libBT/include/opencv2/opencv.hpp
 
 ../libBT/include/composite_node.h
 behavior_node.h
@@ -66,15 +78,23 @@ composite_node.h
 precondition_node.h
 -
 
-../libBT/include/sentry_blackboard.h
-memory
--
-log.h
-../libBT/include/log.h
-
 ../libBT/include/sequence_node.h
 composite_node.h
 -
+
+../libBase/baseClasses/include/base_aim.h
+opencv2/opencv.hpp
+-
+pnp_solver.h
+-
+basic_tool.h
+-
+iostream
+-
+
+../libBase/baseTools/include/basic_tool.h
+opencv2/opencv.hpp
+../libBase/baseTools/include/opencv2/opencv.hpp
 
 ../libBase/baseTools/include/log.h
 glog/logging.h
@@ -84,35 +104,13 @@ glog/raw_logging.h
 fstream
 -
 
-/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.cpp
-behavior_node.h
-/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.h
+../libBase/baseTools/include/pnp_solver.h
+opencv2/opencv.hpp
+-
+iostream
+-
 
 /home/wyx/程序/sentry_autoaim/libBT/src/behavior_tree.cpp
 behavior_tree.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/composite_node.cpp
-composite_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/parallel_node.cpp
-parallel_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/precondition_node.cpp
-precondition_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/selector_node.cpp
-selector_node.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp
-sentry_blackboard.h
--
-
-/home/wyx/程序/sentry_autoaim/libBT/src/sequence_node.cpp
-sequence_node.h
 -
 

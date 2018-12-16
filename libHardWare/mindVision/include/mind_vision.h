@@ -3,12 +3,12 @@
 
 #include "CameraApi.h" //相机SDK的API头文件
 
-#include "opencv2/core/core.hpp"
-#include "opencv2/highgui/highgui.hpp"
+#include <opencv2/opencv.hpp>
 #include <stdio.h>
 #include <iostream>
+#include <thread>
 
-#define CAMERA_PARAMS_ADJUST
+//#define CAMERA_PARAMS_ADJUST
 
 using namespace cv;
 using namespace std;
@@ -19,16 +19,10 @@ public:
     ~MindVision();
 
 public:
-    /** 该公司相机的初始化，使用之前必须调用此函数得到可以使用的相机句柄
-     * @return: int, 错误码
+    /** 相机初始化，直接获得句柄并让sdk开始工作（该情况只适用于只有一个相机的情况）
+     * @return: int, 错误码，-1为错误，0为正确
      */
-    int init();
-
-    /** 初始化相机
-     * @param: color, 敌方颜色
-     * @return: int, 错误码
-     */
-    int startPlay(unsigned char color);
+    int init(bool is_enemy_red_);
 
     /** 设置相机的分辨率
      * @param: width, 横向像素
@@ -37,22 +31,32 @@ public:
      */
     int setResolution(int width, int height);
 
+    /** 是否暂停采集
+     * @param: is_capture, 是否采集
+     */
+    void setIsCapture(bool is_capture);
+
     /** 得到图像
      * @param: src, 得到的图像
      * @return: int, 错误码
      */
     int getImg(Mat &src);
 
-    /** 根据传入的字符调整不同的参数
-     * @param: c, 键盘输入的字符
-     * @return: void
-     */
-    void adjustParams(unsigned char c);
-
 private:
+    /** 在另外一个线程中运行，不断更新内部Mat
+     * @param:
+     * @return:
+     */
+    void updateInThread();
+
+    /** 采集原始图片并更新Mat
+     * @param:
+     */
+    int getRawImage();
+
     unsigned char           * g_pRgbBuffer;       //处理后数据缓存区
     int                     iCameraCounts = 1;    //找到的相机的个数
-    int                     iStatus=0;           //状态返回值
+    int                     iStatus=0;            //状态返回值
     int                     hCamera=-1;           //相机句柄
     tSdkCameraDevInfo       tCameraEnumList;      //设备列表信息
     tSdkCameraCapbility     tCapability;          //设备描述信息
@@ -62,7 +66,26 @@ private:
     int                     channel=3;            //通道数
     tSdkImageResolution     tResolution;          //像素
 
+    Mat bufferImage; //缓冲图像，用于线程更新使用
+
+    pthread_mutex_t imgMutex = PTHREAD_MUTEX_INITIALIZER; //互斥变量锁
+
+    bool isUpdate; //更新标志位
+
+    bool isCapture; //是否采集图像
+
+    bool is_enemy_red; //敌方颜色，用于重连时初始化
+
+    std::thread* capture_thread;
+
     #ifdef CAMERA_PARAMS_ADJUST
+private:
+    /** 根据传入的字符调整不同的参数
+     * @param: c, 键盘输入的字符
+     * @return: void
+     */
+    void adjustParams(unsigned char c);
+
     /** 当前的操作是作用在哪个相机元素上
      * "f"：frameSpeed  "g"：gamma  "e"：exposureTime  "c"：contrast  "a":aeState
      */

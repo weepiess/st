@@ -1,5 +1,10 @@
-include_directories(./include)
+include_directories(./include 
+                    ./include/test 
+                    ./include/actions)
 
-AUX_SOURCE_DIRECTORY(./src SENTRY_SRCS)
-ADD_LIBRARY(SentryAutoAim ${SENTRY_SRCS})
-target_link_libraries(BehaviorTree)
+aux_source_directory(./src SENTRY_SRCS)
+aux_source_directory(./src/test SENTRY_TEST)
+aux_source_directory(./src/actions SENTRY_ACTIONS)
+
+add_library(SentryAutoAim ${SENTRY_SRCS} ${SENTRY_TEST} ${SENTRY_ACTIONS})
+target_link_libraries(SentryAutoAim BehaviorTree BaseClasses BaseTools)

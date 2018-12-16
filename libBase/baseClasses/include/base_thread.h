@@ -1,80 +1,77 @@
-﻿////////////////////////////////////////////////////////////////////////////////
-///Copyright(c)      UESTC ROBOMASTER2018      Base Code for robot
-///ALL RIGHTS RESERVED
-///@file:base_thread.h
-///@brief: 线程基类头文件，封装线程操作。
-///@vesion 1.0
-///@author: Gezp
-///@email: 1350824033@qq.com
-///@date: 2018.3.3
-///修订历史：
-///参考:http://blog.csdn.net/maotoula/article/details/18501963
-////////////////////////////////////////////////////////////////////////////////
-#ifndef BASE_THREAD_H 
-#define BASE_THREAD_H
+#ifndef BASE_THREAD
+#define BASE_THREAD
 
-#include <unistd.h>     /*Unix 标准函数定义*/
-#include <iostream>  
-#include <pthread.h> 
+#include <thread>
+#include <atomic>
 
-  
-using namespace std;  
-  
-class BaseThread  
-{  
+class BaseThread{
 public:
-      //构造函数  
     BaseThread();
-private:  
-    //当前线程的线程ID  
-    pthread_t tid;  
-    //线程的状态  
-    int threadStatus;  
-    //获取执行方法的指针  
-    static void * thread_proxy_func(void * args);  
-    //内部执行方法  
-    void* run1();
-public:  
-    //线程的状态－新建  
-    static const int THREAD_STATUS_NEW = 0;  
-    //线程的状态－正在运行  
-    static const int THREAD_STATUS_RUNNING = 1;  
-    //线程的状态－运行结束  
-    static const int THREAD_STATUS_EXIT = -1;   
-    //线程的运行实体  
-    virtual void run()=0;  
-    //开始执行线程  
-    bool start();  
-    //获取线程ID  
-    pthread_t getThreadID();  
-    //获取线程状态  
-    int getState();  
-    //等待线程直至退出  
-    void join();  
-    //等待线程退出或者超时  
-    void join(unsigned long millisTime);  
-};  
-#endif
+    virtual ~BaseThread();
 
+public:
+    //创建线程并运行
+    void start();
+
+    //获取当前线程id
+    std::thread::id getId();
+
+    //中断线程
+    void interrupt();
+
+    //获取中断信息
+    bool isInterrupted();
+
+    //等待线程运行结束
+    void join();
+
+protected:
+    //线程运行函数
+    virtual void run() = 0;
+
+private:
+    //中断标志位
+    std::atomic<bool> is_interrupt;
+
+    //执行线程
+    std::thread execute_thread;
+};
+
+#endif //BASE_THREAD
 
 /*
+example:
 
-example
-class Test : public BaseThread
-{
+------------my_thread.h---------------
+#include "base_thread.h"
 
+class MyThread: public BaseThread{
 public:
- void run(){
-    //线程逻辑.
-  }
+	MyThread();
+	virtual ~MyThread();
+ 
+private:
+	virtual void run() override; //you must override it in .cpp
+};
 
+-------------my_thread.cpp--------------
+#include "my_thread.h"
+
+void MyThread::run(){
+    while(!isInterrupted()){
+        //run your code
+    }
 }
 
-using:
+---------------main.cpp-----------------
+int main(){
+    MyThread my_thread;
+    my_thread.start();
 
-Test test;
-test.start(); //开启线程
+    //some code
 
+    my_thread.interrupt(); //if need
+
+    return 0;
+}
 */
-
-

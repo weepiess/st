@@ -1,15 +1,15 @@
 #ifndef LIBBT_PRECONDITION_NODE_H
 #define LIBBT_PRECONDITION_NODE_H
 
-#include <decorator_node.h>
-#include <selector_node.h>
+#include "decorator_node.h"
+#include "selector_node.h"
 #include <algorithm>
 
 namespace bt{
 
 class PreconditionNode: public DecoratorNode{
 public:
-    PreconditionNode(std::string name, const SentryBlackboard::Ptr &blackboard_ptr,
+    PreconditionNode(std::string name, const Blackboard::Ptr &blackboard_ptr,
                     const BehaviorNode::Ptr &child_node_ptr = nullptr,
                     std::function<bool()> precondition_function = std::function<bool()>(),
                     AbortType abort_type = AbortType::NONE):

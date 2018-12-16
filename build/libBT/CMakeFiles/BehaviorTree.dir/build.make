@@ -135,22 +135,9 @@ libBT/CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.s"
 	cd /home/wyx/程序/sentry_autoaim/build/libBT && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libBT/src/selector_node.cpp -o CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.s
 
-libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o: libBT/CMakeFiles/BehaviorTree.dir/flags.make
-libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o: ../libBT/src/sentry_blackboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o"
-	cd /home/wyx/程序/sentry_autoaim/build/libBT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o -c /home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp
-
-libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.i"
-	cd /home/wyx/程序/sentry_autoaim/build/libBT && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp > CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.i
-
-libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.s"
-	cd /home/wyx/程序/sentry_autoaim/build/libBT && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libBT/src/sentry_blackboard.cpp -o CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.s
-
 libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o: libBT/CMakeFiles/BehaviorTree.dir/flags.make
 libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o: ../libBT/src/sequence_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o"
 	cd /home/wyx/程序/sentry_autoaim/build/libBT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o -c /home/wyx/程序/sentry_autoaim/libBT/src/sequence_node.cpp
 
 libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.i: cmake_force
@@ -169,7 +156,6 @@ BehaviorTree_OBJECTS = \
 "CMakeFiles/BehaviorTree.dir/src/parallel_node.cpp.o" \
 "CMakeFiles/BehaviorTree.dir/src/precondition_node.cpp.o" \
 "CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.o" \
-"CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o" \
 "CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o"
 
 # External object files for target BehaviorTree
@@ -181,11 +167,10 @@ libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/composite_node.cp
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/parallel_node.cpp.o
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/precondition_node.cpp.o
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.o
-libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/build.make
 libBT/libBehaviorTree.a: libBT/CMakeFiles/BehaviorTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libBehaviorTree.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libBehaviorTree.a"
 	cd /home/wyx/程序/sentry_autoaim/build/libBT && $(CMAKE_COMMAND) -P CMakeFiles/BehaviorTree.dir/cmake_clean_target.cmake
 	cd /home/wyx/程序/sentry_autoaim/build/libBT && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BehaviorTree.dir/link.txt --verbose=$(VERBOSE)
 

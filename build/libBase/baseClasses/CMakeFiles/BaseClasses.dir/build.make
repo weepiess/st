@@ -83,19 +83,49 @@ libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseClasses.dir/src/base_thread.cpp.s"
 	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.cpp -o CMakeFiles/BaseClasses.dir/src/base_thread.cpp.s
 
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o: libBase/baseClasses/CMakeFiles/BaseClasses.dir/flags.make
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o: ../libBase/baseClasses/src/function_thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o -c /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.cpp
+
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseClasses.dir/src/function_thread.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.cpp > CMakeFiles/BaseClasses.dir/src/function_thread.cpp.i
+
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseClasses.dir/src/function_thread.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.cpp -o CMakeFiles/BaseClasses.dir/src/function_thread.cpp.s
+
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o: libBase/baseClasses/CMakeFiles/BaseClasses.dir/flags.make
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o: ../libBase/baseClasses/src/kalman_filter_by_opencv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o -c /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.cpp
+
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.i"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.cpp > CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.i
+
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.s"
+	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.cpp -o CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.s
+
 # Object files for target BaseClasses
 BaseClasses_OBJECTS = \
 "CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o" \
-"CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o"
+"CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o" \
+"CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o" \
+"CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o"
 
 # External object files for target BaseClasses
 BaseClasses_EXTERNAL_OBJECTS =
 
 libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o
 libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o
+libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o
+libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o
 libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make
 libBase/baseClasses/libBaseClasses.a: libBase/baseClasses/CMakeFiles/BaseClasses.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBaseClasses.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/程序/sentry_autoaim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libBaseClasses.a"
 	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && $(CMAKE_COMMAND) -P CMakeFiles/BaseClasses.dir/cmake_clean_target.cmake
 	cd /home/wyx/程序/sentry_autoaim/build/libBase/baseClasses && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BaseClasses.dir/link.txt --verbose=$(VERBOSE)
 

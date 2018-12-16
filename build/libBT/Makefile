@@ -287,33 +287,6 @@ src/selector_node.cpp.s:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.s
 .PHONY : src/selector_node.cpp.s
 
-src/sentry_blackboard.o: src/sentry_blackboard.cpp.o
-
-.PHONY : src/sentry_blackboard.o
-
-# target to build an object file
-src/sentry_blackboard.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o
-.PHONY : src/sentry_blackboard.cpp.o
-
-src/sentry_blackboard.i: src/sentry_blackboard.cpp.i
-
-.PHONY : src/sentry_blackboard.i
-
-# target to preprocess a source file
-src/sentry_blackboard.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.i
-.PHONY : src/sentry_blackboard.cpp.i
-
-src/sentry_blackboard.s: src/sentry_blackboard.cpp.s
-
-.PHONY : src/sentry_blackboard.s
-
-# target to generate assembly for a file
-src/sentry_blackboard.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.s
-.PHONY : src/sentry_blackboard.cpp.s
-
 src/sequence_node.o: src/sequence_node.cpp.o
 
 .PHONY : src/sequence_node.o
@@ -368,9 +341,6 @@ help:
 	@echo "... src/selector_node.o"
 	@echo "... src/selector_node.i"
 	@echo "... src/selector_node.s"
-	@echo "... src/sentry_blackboard.o"
-	@echo "... src/sentry_blackboard.i"
-	@echo "... src/sentry_blackboard.s"
 	@echo "... src/sequence_node.o"
 	@echo "... src/sequence_node.i"
 	@echo "... src/sequence_node.s"

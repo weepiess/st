@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../libBase/baseTools/include/log.h
+glog/logging.h
+../libBase/baseTools/include/glog/logging.h
+glog/raw_logging.h
+../libBase/baseTools/include/glog/raw_logging.h
+fstream
+-
+
 ../libHardWare/mindVision/include/CameraApi.h
 CameraDefine.h
 ../libHardWare/mindVision/include/CameraDefine.h
@@ -21,16 +29,20 @@ CameraStatus.h
 ../libHardWare/mindVision/include/mind_vision.h
 CameraApi.h
 ../libHardWare/mindVision/include/CameraApi.h
-opencv2/core/core.hpp
-../libHardWare/mindVision/include/opencv2/core/core.hpp
-opencv2/highgui/highgui.hpp
-../libHardWare/mindVision/include/opencv2/highgui/highgui.hpp
+opencv2/opencv.hpp
+-
 stdio.h
 -
 iostream
+-
+thread
 -
 
 /home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.cpp
 mind_vision.h
 /home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.h
+chrono
+/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/chrono
+log.h
+/home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/log.h
 

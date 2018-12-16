@@ -21,13 +21,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
+  "../libSentryAutoAim/include/test"
   "../libHardWare/usbCapture/./include"
-  "../libBase/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/wyx/程序/sentry_autoaim/build/libBase/baseClasses/CMakeFiles/BaseClasses.dir/DependInfo.cmake"
+  "/home/wyx/程序/sentry_autoaim/build/libBase/baseTools/CMakeFiles/BaseTools.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

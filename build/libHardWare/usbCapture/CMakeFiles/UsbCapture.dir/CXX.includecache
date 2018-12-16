@@ -7,12 +7,14 @@
 #IncludeRegexTransform: 
 
 ../libBase/baseClasses/include/base_thread.h
-unistd.h
+thread
 -
-iostream
+atomic
 -
-pthread.h
--
+base_thread.h
+../libBase/baseClasses/include/base_thread.h
+my_thread.h
+../libBase/baseClasses/include/my_thread.h
 
 ../libHardWare/usbCapture/include/usb_capture_with_opencv.h
 opencv2/opencv.hpp

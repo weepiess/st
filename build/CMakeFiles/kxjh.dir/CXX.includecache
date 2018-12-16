@@ -11,10 +11,12 @@ robot_model.h
 ../include/robot_model.h
 opencv2/opencv.hpp
 -
-sentry_blackboard.h
-../include/sentry_blackboard.h
-behavior_tree_test.h
-../include/behavior_tree_test.h
+blackboard.h
+../include/blackboard.h
+behavior_test_tree.h
+../include/behavior_test_tree.h
+sentry_behavior_tree.h
+../include/sentry_behavior_tree.h
 
 ../include/robot_model.h
 serial_port.h
@@ -45,8 +47,8 @@ vector
 -
 iostream
 -
-sentry_blackboard.h
-../libBT/include/sentry_blackboard.h
+blackboard.h
+../libBT/include/blackboard.h
 log.h
 ../libBT/include/log.h
 
@@ -65,6 +67,18 @@ selector_node.h
 -
 sequence_node.h
 -
+
+../libBT/include/blackboard.h
+memory
+-
+vector
+-
+base_aim.h
+-
+log.h
+../libBT/include/log.h
+opencv2/opencv.hpp
+../libBT/include/opencv2/opencv.hpp
 
 ../libBT/include/composite_node.h
 behavior_node.h
@@ -92,35 +106,37 @@ composite_node.h
 precondition_node.h
 -
 
-../libBT/include/sentry_blackboard.h
-memory
--
-log.h
-../libBT/include/log.h
-
 ../libBT/include/sequence_node.h
 composite_node.h
 -
 
-../libBase/baseClasses/include/base_thread.h
-unistd.h
+../libBase/baseClasses/include/base_aim.h
+opencv2/opencv.hpp
+-
+pnp_solver.h
+-
+basic_tool.h
 -
 iostream
 -
-pthread.h
+
+../libBase/baseClasses/include/base_thread.h
+thread
 -
+atomic
+-
+base_thread.h
+../libBase/baseClasses/include/base_thread.h
+my_thread.h
+../libBase/baseClasses/include/my_thread.h
 
 ../libBase/baseTools/include/basic_tool.h
-sys/time.h
--
+opencv2/opencv.hpp
+../libBase/baseTools/include/opencv2/opencv.hpp
 
 ../libBase/baseTools/include/image_tool.h
 opencv2/opencv.hpp
 ../libBase/baseTools/include/opencv2/opencv.hpp
-sys/time.h
-../libBase/baseTools/include/sys/time.h
-time.h
-../libBase/baseTools/include/time.h
 
 ../libBase/baseTools/include/log.h
 glog/logging.h
@@ -128,6 +144,12 @@ glog/logging.h
 glog/raw_logging.h
 ../libBase/baseTools/include/glog/raw_logging.h
 fstream
+-
+
+../libBase/baseTools/include/pnp_solver.h
+opencv2/opencv.hpp
+-
+iostream
 -
 
 ../libHardWare/mindVision/include/CameraApi.h
@@ -145,13 +167,13 @@ CameraStatus.h
 ../libHardWare/mindVision/include/mind_vision.h
 CameraApi.h
 ../libHardWare/mindVision/include/CameraApi.h
-opencv2/core/core.hpp
-../libHardWare/mindVision/include/opencv2/core/core.hpp
-opencv2/highgui/highgui.hpp
-../libHardWare/mindVision/include/opencv2/highgui/highgui.hpp
+opencv2/opencv.hpp
+-
 stdio.h
 -
 iostream
+-
+thread
 -
 
 ../libHardWare/serialPort/include/serial_interface.h
@@ -198,17 +220,83 @@ opencv2/opencv.hpp
 base_thread.h
 ../libHardWare/usbCapture/include/base_thread.h
 
-../libSentryAutoAim/include/behavior_node_test.h
+../libSentryAutoAim/include/avoid_enemy_action.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
 action_node.h
 ../libSentryAutoAim/include/action_node.h
-sentry_blackboard.h
-../libSentryAutoAim/include/sentry_blackboard.h
+opencv2/opencv.hpp
+../libSentryAutoAim/include/opencv2/opencv.hpp
 
-../libSentryAutoAim/include/behavior_tree_test.h
+../libSentryAutoAim/include/distinguish_armor_action.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+action_node.h
+../libSentryAutoAim/include/action_node.h
+opencv2/opencv.hpp
+../libSentryAutoAim/include/opencv2/opencv.hpp
+
+../libSentryAutoAim/include/enemy_detect_action.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+action_node.h
+../libSentryAutoAim/include/action_node.h
+opencv2/opencv.hpp
+../libSentryAutoAim/include/opencv2/opencv.hpp
+
+../libSentryAutoAim/include/escape_action.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+action_node.h
+../libSentryAutoAim/include/action_node.h
+opencv2/opencv.hpp
+../libSentryAutoAim/include/opencv2/opencv.hpp
+
+../libSentryAutoAim/include/fast_patrol_action.h
+action_node.h
+../libSentryAutoAim/include/action_node.h
+
+../libSentryAutoAim/include/sentry_behavior_tree.h
 behavior_tree.h
 ../libSentryAutoAim/include/behavior_tree.h
-behavior_node_test.h
-../libSentryAutoAim/include/behavior_node_test.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+log.h
+../libSentryAutoAim/include/log.h
+avoid_enemy_action.h
+../libSentryAutoAim/include/avoid_enemy_action.h
+distinguish_armor_action.h
+../libSentryAutoAim/include/distinguish_armor_action.h
+enemy_detect_action.h
+../libSentryAutoAim/include/enemy_detect_action.h
+escape_action.h
+../libSentryAutoAim/include/escape_action.h
+fast_patrol_action.h
+../libSentryAutoAim/include/fast_patrol_action.h
+shooting_single_action.h
+../libSentryAutoAim/include/shooting_single_action.h
+
+../libSentryAutoAim/include/shooting_single_action.h
+blackboard.h
+../libSentryAutoAim/include/blackboard.h
+action_node.h
+../libSentryAutoAim/include/action_node.h
+pnp_solver.h
+../libSentryAutoAim/include/pnp_solver.h
+
+../libSentryAutoAim/include/test/behavior_test_action.h
+blackboard.h
+../libSentryAutoAim/include/test/blackboard.h
+action_node.h
+../libSentryAutoAim/include/test/action_node.h
+opencv2/opencv.hpp
+../libSentryAutoAim/include/test/opencv2/opencv.hpp
+
+../libSentryAutoAim/include/test/behavior_test_tree.h
+behavior_tree.h
+../libSentryAutoAim/include/test/behavior_tree.h
+behavior_test_action.h
+../libSentryAutoAim/include/test/behavior_test_action.h
 
 /home/wyx/程序/sentry_autoaim/src/control_model.cpp
 image_tool.h
@@ -365,10 +453,6 @@ opencv2/core/check.hpp
 /usr/local/include/opencv2/core/check.hpp
 opencv2/core/base.hpp
 -
-
-/usr/local/include/opencv2/core/core.hpp
-opencv2/core.hpp
-/usr/local/include/opencv2/core/opencv2/core.hpp
 
 /usr/local/include/opencv2/core/core_c.h
 opencv2/core/types_c.h
@@ -1121,10 +1205,6 @@ opencv2/videoio.hpp
 /usr/local/include/opencv2/opencv2/videoio.hpp
 opencv2/highgui/highgui_c.h
 /usr/local/include/opencv2/opencv2/highgui/highgui_c.h
-
-/usr/local/include/opencv2/highgui/highgui.hpp
-opencv2/highgui.hpp
-/usr/local/include/opencv2/highgui/opencv2/highgui.hpp
 
 /usr/local/include/opencv2/highgui/highgui_c.h
 opencv2/core/core_c.h

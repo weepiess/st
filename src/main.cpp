@@ -21,29 +21,27 @@ using namespace std;
 int main(int argc, char *argv[]){
     GLogWrapper glog_wrapper(argv[0]);
 
-    RobotModel robotModel;
-    cout<<"[robot init]robot model start to initialize!"<<endl;
-    robotModel.init();
-    cout<<"[robot init]robot control model start to initializ!"<<endl;
-    usleep(10000);
-    ControlModel controlModel;
-    controlModel.init(&robotModel);
-    cout<<"[robot init]robot serial port start to listen!"<<endl;
-    //SerialListenThread serialListenThread;
-    //serialListenThread.init(&robotModel,&controlModel);
-    //serialListenThread.start();
-    //cout<<"[robot init]robot init end!"<<endl;
-    //debug模块
-    //SerialPortDebug serialPortDebug;
-    //serialPortDebug.init(robotModel.getpSerialInterface());
-    //serialPortDebug.testSerialPort();
-    //主逻辑
-    while(true){
-        controlModel.processFSM();
-    }
-    //serialListenThread.join();
-    cout<<"error end!"<<endl;
-    getchar();//防止监听线程意外结束直接退出。
+    auto armor_detect_action = std::make_shared<EnemyDetectAction>(blackboard_ptr);
+    auto shoot_single_action = std::make_shared<ShootingSingleAction>(blackboard_ptr);
+    auto armor_detect_sequence = std::make_shared<SequenceNode>("armor_detect_sequence", blackboard_ptr);
+    armor_detect_sequence->addChildren(armor_detect_action);
+    armor_detect_sequence->addChildren(shoot_single_action);
+
+    auto fast_patrol_action = std::make_shared<FastPatrolAction>(blackboard_ptr);
+    /*
+    auto enermy_detected_condition = std::make_shared<PreconditionNode>("enermy detected condition" ,
+                                                                         blackboard_ptr, shoot_single_action,
+                                                                         [&](){
+                                                                             if (!blackboard_ptr->getArmorDetectInfo()->is_found){
+                                                                                 return true;
+                                                                             }else return false;
+                                                                         },AbortType::BOTH);
+    */
+    auto root_selector = std::make_shared<SelectorNode>("root_selector", blackboard_ptr);
+    root_selector->addChildren(armor_detect_sequence);
+    root_selector->addChildren(fast_patrol_action);
+    root_node_ptr = root_selector;
+
     return 0;
 }
 

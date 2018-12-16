@@ -1,13 +1,13 @@
 #ifndef LIBBT_SEQUENCE_NODE_H
 #define LIBBT_SEQUENCE_NODE_H
 
-#include <composite_node.h>
+#include "composite_node.h"
 
 namespace bt{
 
 class SequenceNode: public CompositeNode{
 public:
-    SequenceNode(std::string name, const SentryBlackboard::Ptr &blackboard_ptr):
+    SequenceNode(std::string name, const Blackboard::Ptr &blackboard_ptr):
         CompositeNode::CompositeNode(name, BehaviorType::SEQUENCE, blackboard_ptr) {}
 
     virtual ~SequenceNode() = default;

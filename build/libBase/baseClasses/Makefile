@@ -179,6 +179,60 @@ src/base_thread.cpp.s:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.s
 .PHONY : src/base_thread.cpp.s
 
+src/function_thread.o: src/function_thread.cpp.o
+
+.PHONY : src/function_thread.o
+
+# target to build an object file
+src/function_thread.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o
+.PHONY : src/function_thread.cpp.o
+
+src/function_thread.i: src/function_thread.cpp.i
+
+.PHONY : src/function_thread.i
+
+# target to preprocess a source file
+src/function_thread.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.i
+.PHONY : src/function_thread.cpp.i
+
+src/function_thread.s: src/function_thread.cpp.s
+
+.PHONY : src/function_thread.s
+
+# target to generate assembly for a file
+src/function_thread.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.s
+.PHONY : src/function_thread.cpp.s
+
+src/kalman_filter_by_opencv.o: src/kalman_filter_by_opencv.cpp.o
+
+.PHONY : src/kalman_filter_by_opencv.o
+
+# target to build an object file
+src/kalman_filter_by_opencv.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o
+.PHONY : src/kalman_filter_by_opencv.cpp.o
+
+src/kalman_filter_by_opencv.i: src/kalman_filter_by_opencv.cpp.i
+
+.PHONY : src/kalman_filter_by_opencv.i
+
+# target to preprocess a source file
+src/kalman_filter_by_opencv.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.i
+.PHONY : src/kalman_filter_by_opencv.cpp.i
+
+src/kalman_filter_by_opencv.s: src/kalman_filter_by_opencv.cpp.s
+
+.PHONY : src/kalman_filter_by_opencv.s
+
+# target to generate assembly for a file
+src/kalman_filter_by_opencv.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBase/baseClasses/CMakeFiles/BaseClasses.dir/build.make libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.s
+.PHONY : src/kalman_filter_by_opencv.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,6 +248,12 @@ help:
 	@echo "... src/base_thread.o"
 	@echo "... src/base_thread.i"
 	@echo "... src/base_thread.s"
+	@echo "... src/function_thread.o"
+	@echo "... src/function_thread.i"
+	@echo "... src/function_thread.s"
+	@echo "... src/kalman_filter_by_opencv.o"
+	@echo "... src/kalman_filter_by_opencv.i"
+	@echo "... src/kalman_filter_by_opencv.s"
 .PHONY : help
 
 

@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/BehaviorTree.dir/src/parallel_node.cpp.o"
   "CMakeFiles/BehaviorTree.dir/src/precondition_node.cpp.o"
   "CMakeFiles/BehaviorTree.dir/src/selector_node.cpp.o"
-  "CMakeFiles/BehaviorTree.dir/src/sentry_blackboard.cpp.o"
   "CMakeFiles/BehaviorTree.dir/src/sequence_node.cpp.o"
   "libBehaviorTree.pdb"
   "libBehaviorTree.a"

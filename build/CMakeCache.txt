@@ -15,7 +15,13 @@
 ########################
 
 //Dependencies for the target
+BaseClasses_LIB_DEPENDS:STATIC=general;BaseTools;
+
+//Dependencies for the target
 BaseTools_LIB_DEPENDS:STATIC=general;/usr/local/lib/libglog.so;
+
+//Dependencies for the target
+BehaviorTree_LIB_DEPENDS:STATIC=general;BaseTools;general;BaseClasses;general;SerialPort;general;UsbCapture;general;MindVision;
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -203,8 +209,14 @@ GLOG_INCLUDE_DIR:PATH=/usr/local/include/glog
 //Path to a library.
 GLOG_LIBRARY:FILEPATH=/usr/local/lib/libglog.so
 
+//Dependencies for the target
+MindVision_LIB_DEPENDS:STATIC=general;BaseTools;
+
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/share/OpenCV
+
+//Dependencies for the target
+SentryAutoAim_LIB_DEPENDS:STATIC=general;BehaviorTree;general;BaseClasses;general;BaseTools;
 
 //Dependencies for the target
 UsbCapture_LIB_DEPENDS:STATIC=general;BaseClasses;
