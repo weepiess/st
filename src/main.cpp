@@ -11,37 +11,58 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
-#include "control_model.h"
 #include "serial_listen_thread.h"
 #include "serial_port_debug.h"
 #include "log.h"
 
+#include "sentry_behavior_tree.h"
+#include "test/behavior_test_tree.h"
+#include "blackboard.h"
+
 using namespace std;
 
 int main(int argc, char *argv[]){
+    //初始化glog
     GLogWrapper glog_wrapper(argv[0]);
+    LOG_INFO<<"glog init successful!!!";
 
-    auto armor_detect_action = std::make_shared<EnemyDetectAction>(blackboard_ptr);
-    auto shoot_single_action = std::make_shared<ShootingSingleAction>(blackboard_ptr);
-    auto armor_detect_sequence = std::make_shared<SequenceNode>("armor_detect_sequence", blackboard_ptr);
-    armor_detect_sequence->addChildren(armor_detect_action);
-    armor_detect_sequence->addChildren(shoot_single_action);
+    while(true){ //防止因为异常发生退出程序
+        try{
+            //读取配置
+            bool is_enemy_red;
+            string serial_path;
+            cv::FileStorage f("../res/main_config.yaml", cv::FileStorage::READ);
+            f["enemy_is_red"] >> is_enemy_red;
+            f["serial_path"] >> serial_path;
 
-    auto fast_patrol_action = std::make_shared<FastPatrolAction>(blackboard_ptr);
-    /*
-    auto enermy_detected_condition = std::make_shared<PreconditionNode>("enermy detected condition" ,
-                                                                         blackboard_ptr, shoot_single_action,
-                                                                         [&](){
-                                                                             if (!blackboard_ptr->getArmorDetectInfo()->is_found){
-                                                                                 return true;
-                                                                             }else return false;
-                                                                         },AbortType::BOTH);
-    */
-    auto root_selector = std::make_shared<SelectorNode>("root_selector", blackboard_ptr);
-    root_selector->addChildren(armor_detect_sequence);
-    root_selector->addChildren(fast_patrol_action);
-    root_node_ptr = root_selector;
+            //创建黑板
+            std::shared_ptr<Blackboard> blackboard_ptr = std::make_shared<Blackboard>();
+            blackboard_ptr->init(is_enemy_red, serial_path);
 
+            //创建监听线程并启动
+            SerialListenThread serial_listen_thread;
+            serial_listen_thread.init(blackboard_ptr);
+            serial_listen_thread.start();
+            LOG_INFO<<"serial listener has started!!!";
+
+            //串口debug模块
+            //SerialPortDebug serialPortDebug;
+            //serialPortDebug.init(blackboard_ptr->getpSerialInterface());
+            //serialPortDebug.testSerialPort();
+
+            //测试行为树和发送数据
+            //BehaviorTestTree behavior_test_tree(blackboard_ptr, 25);
+            //behavior_test_tree.execute();
+
+            //开启行为树
+            SentryBehaviorTree sentry_behavior_tree(blackboard_ptr, 25);
+            sentry_behavior_tree.execute(); //内部会有while堵塞
+
+        } catch (...){
+            LOG_ERROR<<"exceptions happened!!!";
+        }
+
+        usleep(5000000); //休眠5s尝试继续执行
+    }
     return 0;
 }
-

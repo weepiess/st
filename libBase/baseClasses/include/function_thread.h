@@ -4,11 +4,15 @@
 
 #include <thread>
 #include "base_thread.h"
+#include <functional>
 
 class FunctionThread: public BaseThread{
 public:
-    FunctionThread(std::function<void()> function_);
-    ~FunctionThread();
+    FunctionThread();
+    virtual ~FunctionThread();
+
+public:
+    void init(std::function<void()> function_);
 
 private:
     virtual void run() override;

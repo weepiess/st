@@ -3,12 +3,12 @@
 
 #include "base_thread.h"
 #include "blackboard.h"
-#include "serial_packet.h"
+#include "serial_interface.h"
 
 class SerialListenThread: public BaseThread{
 public:
     SerialListenThread();
-    ~SerialListenThread();
+    virtual ~SerialListenThread();
 
 public:
     void init(Blackboard::Ptr blackboard_ptr_);

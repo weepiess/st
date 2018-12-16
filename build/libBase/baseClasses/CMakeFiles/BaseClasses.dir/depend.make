@@ -9,6 +9,10 @@ libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o: ../libBase/ba
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o: ../libBase/baseClasses/include/base_thread.h
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o: ../libBase/baseClasses/src/base_thread.cpp
 
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o: ../libBase/baseClasses/include/base_thread.h
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o: ../libBase/baseClasses/include/function_thread.h
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o: ../libBase/baseClasses/src/function_thread.cpp
+
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o: ../libBase/baseClasses/include/kalman_filter_by_opencv.h
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o: ../libBase/baseClasses/src/kalman_filter_by_opencv.cpp
 

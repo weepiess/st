@@ -9,6 +9,10 @@ libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_aim.cpp.o
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/base_thread.cpp.o
  ../libBase/baseClasses/include/base_thread.h
  /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.cpp
+libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/function_thread.cpp.o
+ ../libBase/baseClasses/include/base_thread.h
+ ../libBase/baseClasses/include/function_thread.h
+ /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.cpp
 libBase/baseClasses/CMakeFiles/BaseClasses.dir/src/kalman_filter_by_opencv.cpp.o
  ../libBase/baseClasses/include/kalman_filter_by_opencv.h
  /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.cpp

@@ -26,10 +26,8 @@ public:
 
     void execute();
 
-    void stop();
-
 protected:
-    //子类需要实现该函数，在该函数中创建节点并连接成树，最后必须将根节点的指针传给root_node_!!!
+    //子类需要实现该函数，在该函数中创建节点并连接成树，最后必须将根节点的指针传给root_node_ptr!!!
     virtual void initBT() = 0;
 
     BehaviorNode::Ptr root_node_ptr;

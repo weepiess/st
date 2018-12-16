@@ -1,15 +1,24 @@
 #ifndef SENTRY_BEHAVIOR_TREE
 #define SENTRY_BEHAVIOR_TREE
 
-#include "behavior_test_action.h"
+#include "behavior_tree.h"
 
-#include "avoid_enemy_action.h"
-#include "distinguish_armor_action.h"
-#include "enemy_detect_action.h"
-#include "escape_action.h"
-#include "fast_patrol_action.h"
-#include "shooting_single_action.h"
+#include "actions/avoid_enemy_action.h"
+#include "actions/distinguish_armor_action.h"
+#include "actions/enemy_detect_action.h"
+#include "actions/escape_action.h"
+#include "actions/fast_patrol_action.h"
+#include "actions/shooting_single_action.h"
 
-#include "sentry_blackboard.h"
+class SentryBehaviorTree: public bt::BehaviorTree{
+public:
+    SentryBehaviorTree(const Blackboard::Ptr& blackboard_ptr, int cycle_duration):
+        BehaviorTree::BehaviorTree(blackboard_ptr, cycle_duration){}
 
-#endif //SENTRY_BEHAVIOR_TREE
+    virtual ~SentryBehaviorTree() noexcept = default;
+
+protected:
+    virtual void initBT() override;
+};
+
+#endif

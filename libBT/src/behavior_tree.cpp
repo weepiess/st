@@ -21,8 +21,3 @@ void bt::BehaviorTree::execute(){
         LOG_INFO << "----------------------------------";   
     }
 }
-
-void bt::BehaviorTree::stop(){
-    running_ = false;
-    LOG_WARNING<<"behavior tree has been stopped!";
-}

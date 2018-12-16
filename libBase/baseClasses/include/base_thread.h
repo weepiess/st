@@ -11,7 +11,7 @@ public:
 
 public:
     //创建线程并运行
-    void start();
+    virtual void start();
 
     //获取当前线程id
     std::thread::id getId();
@@ -30,11 +30,11 @@ protected:
     virtual void run() = 0;
 
 private:
-    //中断标志位
-    std::atomic<bool> is_interrupt;
-
     //执行线程
     std::thread execute_thread;
+
+    //中断标志位
+    std::atomic<bool> is_interrupt;
 };
 
 #endif //BASE_THREAD

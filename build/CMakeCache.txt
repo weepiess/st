@@ -210,7 +210,7 @@ GLOG_INCLUDE_DIR:PATH=/usr/local/include/glog
 GLOG_LIBRARY:FILEPATH=/usr/local/lib/libglog.so
 
 //Dependencies for the target
-MindVision_LIB_DEPENDS:STATIC=general;BaseTools;
+MindVision_LIB_DEPENDS:STATIC=general;BaseClasses;general;BaseTools;general;MVSDK;
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/share/OpenCV

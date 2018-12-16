@@ -9,7 +9,6 @@ find_package(Glog REQUIRED)
 #find_package(Halcon REQUIRED)
 
 include_directories(
-    ${catkin_INCLUDE_DIRS}
     ${GLOG_INCLUDE_DIR}
     #${HALCON_INCLUDE_DIR}
     #${HALCON_INCLUDE_DIR}/halconcpp
@@ -22,7 +21,6 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/libBase/baseTools/include
     ${PROJECT_SOURCE_DIR}/libBT/include
     ${PROJECT_SOURCE_DIR}/libSentryAutoAim/include
-    ${PROJECT_SOURCE_DIR}/libSentryAutoAim/include/test
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/libBase)
@@ -38,12 +36,11 @@ target_link_libraries(kxjh
     SerialPort
     UsbCapture
     MindVision
-    SentryAutoAim
     pthread
-    BehaviorTree
+    SentryAutoAim
     BaseClasses
     BaseTools
-    MVSDK
+    BehaviorTree
     ${OpenCV_LIBS} #必须放在后面，否则报错
     ${GOLG_LIBRARY}
     #${HALCON_LIBRARY}

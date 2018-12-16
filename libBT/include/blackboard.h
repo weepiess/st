@@ -6,6 +6,7 @@
 #include "usb_capture_with_thread.h"
 #include <memory>
 #include "base_aim.h"
+#include <mutex>
 
 //输入血量信息
 struct InBloodInfo{
@@ -49,16 +50,16 @@ public:
     typedef std::shared_ptr<Blackboard> Ptr;
 
 public:
+    //初始化函数
+    void init(bool is_enemy_red_, string serial_path);
+
     //硬件资源
     SerialInterface* getSerialInterface();
-    UsbCaptureWithThread* getUsbCapture();
     MindVision* getVisionCapture();
 
     //32发送，主机接收的状态信息
     void updateBloodInfo(int remain, int loss, uchar armor_id, uchar is_save);
     void updateChassisInfo(float pitch, float yaw, short int curr_pos, uchar is_bullet_remain);
-
-    void setEnemyRed(bool is_enemy_red_);
 
     //行为树获取状态
     int getBloodRemain();
@@ -71,19 +72,15 @@ public:
     short int getCurrPos();
     uchar isBulletRemain();
 
+    InArmorDetectInfo* getArmorDetectInfo();
     bool isEnemyRed();
 
     //行为树调用更新状态
-    void Blackboard::updateArmorInfo(bool is_found, const vector<Armor>& detected_armor_);
-
-    //状态信息
-    InArmorDetectInfo* getArmorDetectInfo();
-    bool isEnemyRed();
+    void updateArmorInfo(bool is_found, const vector<Armor>& detected_armor_);
 
 private:
     //硬件资源
     SerialInterface serial_interface;
-    UsbCaptureWithThread usb_capture;
     MindVision vision_capture;
 
     //状态信息
@@ -92,6 +89,10 @@ private:
     InChassisInfo chassis_info;
 
     bool is_enemy_red;
+
+    //互斥量
+    std::mutex blood_mutex;
+    std::mutex chassis_mutex;
 }; //class
 
 #endif //BT_BLACKBOARD

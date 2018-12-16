@@ -241,6 +241,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/serial_listen_thread.o: src/serial_listen_thread.cpp.o
+
+.PHONY : src/serial_listen_thread.o
+
+# target to build an object file
+src/serial_listen_thread.cpp.o:
+	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.o
+.PHONY : src/serial_listen_thread.cpp.o
+
+src/serial_listen_thread.i: src/serial_listen_thread.cpp.i
+
+.PHONY : src/serial_listen_thread.i
+
+# target to preprocess a source file
+src/serial_listen_thread.cpp.i:
+	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.i
+.PHONY : src/serial_listen_thread.cpp.i
+
+src/serial_listen_thread.s: src/serial_listen_thread.cpp.s
+
+.PHONY : src/serial_listen_thread.s
+
+# target to generate assembly for a file
+src/serial_listen_thread.cpp.s:
+	$(MAKE) -f CMakeFiles/kxjh.dir/build.make CMakeFiles/kxjh.dir/src/serial_listen_thread.cpp.s
+.PHONY : src/serial_listen_thread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +287,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/serial_listen_thread.o"
+	@echo "... src/serial_listen_thread.i"
+	@echo "... src/serial_listen_thread.s"
 .PHONY : help
 
 

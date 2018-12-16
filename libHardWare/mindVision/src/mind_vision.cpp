@@ -7,10 +7,8 @@
 MindVision::MindVision(){}
 
 MindVision::~MindVision(){
-    capture_thread->join();
     CameraUnInit(hCamera);
     free(g_pRgbBuffer);
-    delete capture_thread;
 }
 
 int MindVision::init(bool is_enemy_red_){
@@ -116,7 +114,8 @@ int MindVision::init(bool is_enemy_red_){
     isUpdate = false;
     isCapture = true;
     LOG_INFO<<"camera is ready, now open it and capture.";
-    capture_thread = new std::thread(&MindVision::updateInThread, this);
+    function_thread.init(std::bind(&MindVision::updateInThread, this));
+    function_thread.start();
     return 0;
 }
 
@@ -182,26 +181,24 @@ int MindVision::getRawImage(){
 }
 
 int MindVision::getImg(Mat &src){
-    pthread_mutex_lock(&imgMutex); //防止多线程读取图片出错
+    std::lock_guard<std::mutex> lock(imgMutex); //防止多线程读取图片出错
     if(!isUpdate){
-        //等待20ms
+        //等待15ms
         int timeCounter=0;
-        while(!isUpdate && timeCounter<20){
-            usleep(1000);//1ms等待
+        while(!isUpdate && timeCounter<30){
+            usleep(500);//0.5ms等待
             timeCounter++;
         }
         if(!isUpdate){
             LOG_WARNING<<"getImg() overtime.";
-            pthread_mutex_unlock(&imgMutex); //一定要记得释放锁
             return -1;//更新超时
         }
     }
     bufferImage.copyTo(src);//读取图片
     if(src.empty()){
-        pthread_mutex_unlock(&imgMutex);
         return -1;
     }
-    pthread_mutex_unlock(&imgMutex);
+    isUpdate = false;
     return 0;
 }
 

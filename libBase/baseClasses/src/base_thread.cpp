@@ -1,4 +1,5 @@
 #include "base_thread.h"
+#include <iostream>
 
 BaseThread::BaseThread(){}
 

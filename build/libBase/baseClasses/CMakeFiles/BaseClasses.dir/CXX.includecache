@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../libBase/baseClasses/include/base_aim.h
+opencv2/opencv.hpp
+-
+pnp_solver.h
+-
+basic_tool.h
+-
+iostream
+-
+
 ../libBase/baseClasses/include/base_thread.h
 thread
 -
@@ -16,7 +26,47 @@ base_thread.h
 my_thread.h
 ../libBase/baseClasses/include/my_thread.h
 
+../libBase/baseClasses/include/function_thread.h
+thread
+-
+base_thread.h
+../libBase/baseClasses/include/base_thread.h
+functional
+-
+
+../libBase/baseClasses/include/kalman_filter_by_opencv.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
+../libBase/baseTools/include/basic_tool.h
+opencv2/opencv.hpp
+../libBase/baseTools/include/opencv2/opencv.hpp
+
+../libBase/baseTools/include/pnp_solver.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_aim.cpp
+base_aim.h
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_aim.h
+
 /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.cpp
 base_thread.h
 /home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/base_thread.h
+iostream
+-
+
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.cpp
+function_thread.h
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/function_thread.h
+iostream
+-
+
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.cpp
+kalman_filter_by_opencv.h
+/home/wyx/程序/sentry_autoaim/libBase/baseClasses/src/kalman_filter_by_opencv.h
 

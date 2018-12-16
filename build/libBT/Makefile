@@ -179,6 +179,33 @@ src/behavior_tree.cpp.s:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/behavior_tree.cpp.s
 .PHONY : src/behavior_tree.cpp.s
 
+src/blackboard.o: src/blackboard.cpp.o
+
+.PHONY : src/blackboard.o
+
+# target to build an object file
+src/blackboard.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/blackboard.cpp.o
+.PHONY : src/blackboard.cpp.o
+
+src/blackboard.i: src/blackboard.cpp.i
+
+.PHONY : src/blackboard.i
+
+# target to preprocess a source file
+src/blackboard.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/blackboard.cpp.i
+.PHONY : src/blackboard.cpp.i
+
+src/blackboard.s: src/blackboard.cpp.s
+
+.PHONY : src/blackboard.s
+
+# target to generate assembly for a file
+src/blackboard.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libBT/CMakeFiles/BehaviorTree.dir/build.make libBT/CMakeFiles/BehaviorTree.dir/src/blackboard.cpp.s
+.PHONY : src/blackboard.cpp.s
+
 src/composite_node.o: src/composite_node.cpp.o
 
 .PHONY : src/composite_node.o
@@ -329,6 +356,9 @@ help:
 	@echo "... src/behavior_tree.o"
 	@echo "... src/behavior_tree.i"
 	@echo "... src/behavior_tree.s"
+	@echo "... src/blackboard.o"
+	@echo "... src/blackboard.i"
+	@echo "... src/blackboard.s"
 	@echo "... src/composite_node.o"
 	@echo "... src/composite_node.i"
 	@echo "... src/composite_node.s"

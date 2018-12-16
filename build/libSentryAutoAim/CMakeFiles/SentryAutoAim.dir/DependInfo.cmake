@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/avoid_enemy_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/behavior_test_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/distinguish_armor_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/enemy_detect_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/escape_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/fast_patrol_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o"
-  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/shooting_single_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/avoid_enemy_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/avoid_enemy_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/distinguish_armor_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/distinguish_armor_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/enemy_detect_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/enemy_detect_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/escape_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/escape_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/fast_patrol_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/fast_patrol_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/actions/shooting_single_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/shooting_single_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/sentry_behavior_tree.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_behavior_tree.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/test/behavior_test_action.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_action.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libSentryAutoAim/src/test/behavior_test_tree.cpp" "/home/wyx/程序/sentry_autoaim/build/libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_tree.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,10 +27,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
-  "../libSentryAutoAim/include/test"
   "../libSentryAutoAim/./include"
-  "../libSentryAutoAim/./include/test"
   "../libSentryAutoAim/./include/actions"
+  "../libSentryAutoAim/./include/test"
   )
 
 # Targets to which this target links.

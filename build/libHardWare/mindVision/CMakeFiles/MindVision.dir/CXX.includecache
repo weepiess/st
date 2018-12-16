@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+../libBase/baseClasses/include/base_thread.h
+thread
+-
+atomic
+-
+base_thread.h
+../libBase/baseClasses/include/base_thread.h
+my_thread.h
+../libBase/baseClasses/include/my_thread.h
+
+../libBase/baseClasses/include/function_thread.h
+thread
+-
+base_thread.h
+../libBase/baseClasses/include/base_thread.h
+functional
+-
+
 ../libBase/baseTools/include/log.h
 glog/logging.h
 ../libBase/baseTools/include/glog/logging.h
@@ -37,6 +55,12 @@ iostream
 -
 thread
 -
+mutex
+-
+atomic
+-
+function_thread.h
+../libHardWare/mindVision/include/function_thread.h
 
 /home/wyx/程序/sentry_autoaim/libHardWare/mindVision/src/mind_vision.cpp
 mind_vision.h

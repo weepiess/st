@@ -125,194 +125,248 @@ SentryAutoAim/fast:
 	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build
 .PHONY : SentryAutoAim/fast
 
-src/avoid_enemy_action.o: src/avoid_enemy_action.cpp.o
+src/actions/avoid_enemy_action.o: src/actions/avoid_enemy_action.cpp.o
 
-.PHONY : src/avoid_enemy_action.o
-
-# target to build an object file
-src/avoid_enemy_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.o
-.PHONY : src/avoid_enemy_action.cpp.o
-
-src/avoid_enemy_action.i: src/avoid_enemy_action.cpp.i
-
-.PHONY : src/avoid_enemy_action.i
-
-# target to preprocess a source file
-src/avoid_enemy_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.i
-.PHONY : src/avoid_enemy_action.cpp.i
-
-src/avoid_enemy_action.s: src/avoid_enemy_action.cpp.s
-
-.PHONY : src/avoid_enemy_action.s
-
-# target to generate assembly for a file
-src/avoid_enemy_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/avoid_enemy_action.cpp.s
-.PHONY : src/avoid_enemy_action.cpp.s
-
-src/behavior_test_action.o: src/behavior_test_action.cpp.o
-
-.PHONY : src/behavior_test_action.o
+.PHONY : src/actions/avoid_enemy_action.o
 
 # target to build an object file
-src/behavior_test_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.o
-.PHONY : src/behavior_test_action.cpp.o
+src/actions/avoid_enemy_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/avoid_enemy_action.cpp.o
+.PHONY : src/actions/avoid_enemy_action.cpp.o
 
-src/behavior_test_action.i: src/behavior_test_action.cpp.i
+src/actions/avoid_enemy_action.i: src/actions/avoid_enemy_action.cpp.i
 
-.PHONY : src/behavior_test_action.i
+.PHONY : src/actions/avoid_enemy_action.i
 
 # target to preprocess a source file
-src/behavior_test_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.i
-.PHONY : src/behavior_test_action.cpp.i
+src/actions/avoid_enemy_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/avoid_enemy_action.cpp.i
+.PHONY : src/actions/avoid_enemy_action.cpp.i
 
-src/behavior_test_action.s: src/behavior_test_action.cpp.s
+src/actions/avoid_enemy_action.s: src/actions/avoid_enemy_action.cpp.s
 
-.PHONY : src/behavior_test_action.s
+.PHONY : src/actions/avoid_enemy_action.s
 
 # target to generate assembly for a file
-src/behavior_test_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/behavior_test_action.cpp.s
-.PHONY : src/behavior_test_action.cpp.s
+src/actions/avoid_enemy_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/avoid_enemy_action.cpp.s
+.PHONY : src/actions/avoid_enemy_action.cpp.s
 
-src/distinguish_armor_action.o: src/distinguish_armor_action.cpp.o
+src/actions/distinguish_armor_action.o: src/actions/distinguish_armor_action.cpp.o
 
-.PHONY : src/distinguish_armor_action.o
+.PHONY : src/actions/distinguish_armor_action.o
 
 # target to build an object file
-src/distinguish_armor_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.o
-.PHONY : src/distinguish_armor_action.cpp.o
+src/actions/distinguish_armor_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/distinguish_armor_action.cpp.o
+.PHONY : src/actions/distinguish_armor_action.cpp.o
 
-src/distinguish_armor_action.i: src/distinguish_armor_action.cpp.i
+src/actions/distinguish_armor_action.i: src/actions/distinguish_armor_action.cpp.i
 
-.PHONY : src/distinguish_armor_action.i
+.PHONY : src/actions/distinguish_armor_action.i
 
 # target to preprocess a source file
-src/distinguish_armor_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.i
-.PHONY : src/distinguish_armor_action.cpp.i
+src/actions/distinguish_armor_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/distinguish_armor_action.cpp.i
+.PHONY : src/actions/distinguish_armor_action.cpp.i
 
-src/distinguish_armor_action.s: src/distinguish_armor_action.cpp.s
+src/actions/distinguish_armor_action.s: src/actions/distinguish_armor_action.cpp.s
 
-.PHONY : src/distinguish_armor_action.s
+.PHONY : src/actions/distinguish_armor_action.s
 
 # target to generate assembly for a file
-src/distinguish_armor_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/distinguish_armor_action.cpp.s
-.PHONY : src/distinguish_armor_action.cpp.s
+src/actions/distinguish_armor_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/distinguish_armor_action.cpp.s
+.PHONY : src/actions/distinguish_armor_action.cpp.s
 
-src/enemy_detect_action.o: src/enemy_detect_action.cpp.o
+src/actions/enemy_detect_action.o: src/actions/enemy_detect_action.cpp.o
 
-.PHONY : src/enemy_detect_action.o
+.PHONY : src/actions/enemy_detect_action.o
 
 # target to build an object file
-src/enemy_detect_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.o
-.PHONY : src/enemy_detect_action.cpp.o
+src/actions/enemy_detect_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/enemy_detect_action.cpp.o
+.PHONY : src/actions/enemy_detect_action.cpp.o
 
-src/enemy_detect_action.i: src/enemy_detect_action.cpp.i
+src/actions/enemy_detect_action.i: src/actions/enemy_detect_action.cpp.i
 
-.PHONY : src/enemy_detect_action.i
+.PHONY : src/actions/enemy_detect_action.i
 
 # target to preprocess a source file
-src/enemy_detect_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.i
-.PHONY : src/enemy_detect_action.cpp.i
+src/actions/enemy_detect_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/enemy_detect_action.cpp.i
+.PHONY : src/actions/enemy_detect_action.cpp.i
 
-src/enemy_detect_action.s: src/enemy_detect_action.cpp.s
+src/actions/enemy_detect_action.s: src/actions/enemy_detect_action.cpp.s
 
-.PHONY : src/enemy_detect_action.s
+.PHONY : src/actions/enemy_detect_action.s
 
 # target to generate assembly for a file
-src/enemy_detect_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/enemy_detect_action.cpp.s
-.PHONY : src/enemy_detect_action.cpp.s
+src/actions/enemy_detect_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/enemy_detect_action.cpp.s
+.PHONY : src/actions/enemy_detect_action.cpp.s
 
-src/escape_action.o: src/escape_action.cpp.o
+src/actions/escape_action.o: src/actions/escape_action.cpp.o
 
-.PHONY : src/escape_action.o
+.PHONY : src/actions/escape_action.o
 
 # target to build an object file
-src/escape_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.o
-.PHONY : src/escape_action.cpp.o
+src/actions/escape_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/escape_action.cpp.o
+.PHONY : src/actions/escape_action.cpp.o
 
-src/escape_action.i: src/escape_action.cpp.i
+src/actions/escape_action.i: src/actions/escape_action.cpp.i
 
-.PHONY : src/escape_action.i
+.PHONY : src/actions/escape_action.i
 
 # target to preprocess a source file
-src/escape_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.i
-.PHONY : src/escape_action.cpp.i
+src/actions/escape_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/escape_action.cpp.i
+.PHONY : src/actions/escape_action.cpp.i
 
-src/escape_action.s: src/escape_action.cpp.s
+src/actions/escape_action.s: src/actions/escape_action.cpp.s
 
-.PHONY : src/escape_action.s
+.PHONY : src/actions/escape_action.s
 
 # target to generate assembly for a file
-src/escape_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/escape_action.cpp.s
-.PHONY : src/escape_action.cpp.s
+src/actions/escape_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/escape_action.cpp.s
+.PHONY : src/actions/escape_action.cpp.s
 
-src/fast_patrol_action.o: src/fast_patrol_action.cpp.o
+src/actions/fast_patrol_action.o: src/actions/fast_patrol_action.cpp.o
 
-.PHONY : src/fast_patrol_action.o
+.PHONY : src/actions/fast_patrol_action.o
 
 # target to build an object file
-src/fast_patrol_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.o
-.PHONY : src/fast_patrol_action.cpp.o
+src/actions/fast_patrol_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/fast_patrol_action.cpp.o
+.PHONY : src/actions/fast_patrol_action.cpp.o
 
-src/fast_patrol_action.i: src/fast_patrol_action.cpp.i
+src/actions/fast_patrol_action.i: src/actions/fast_patrol_action.cpp.i
 
-.PHONY : src/fast_patrol_action.i
+.PHONY : src/actions/fast_patrol_action.i
 
 # target to preprocess a source file
-src/fast_patrol_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.i
-.PHONY : src/fast_patrol_action.cpp.i
+src/actions/fast_patrol_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/fast_patrol_action.cpp.i
+.PHONY : src/actions/fast_patrol_action.cpp.i
 
-src/fast_patrol_action.s: src/fast_patrol_action.cpp.s
+src/actions/fast_patrol_action.s: src/actions/fast_patrol_action.cpp.s
 
-.PHONY : src/fast_patrol_action.s
+.PHONY : src/actions/fast_patrol_action.s
 
 # target to generate assembly for a file
-src/fast_patrol_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/fast_patrol_action.cpp.s
-.PHONY : src/fast_patrol_action.cpp.s
+src/actions/fast_patrol_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/fast_patrol_action.cpp.s
+.PHONY : src/actions/fast_patrol_action.cpp.s
 
-src/shooting_single_action.o: src/shooting_single_action.cpp.o
+src/actions/shooting_single_action.o: src/actions/shooting_single_action.cpp.o
 
-.PHONY : src/shooting_single_action.o
+.PHONY : src/actions/shooting_single_action.o
 
 # target to build an object file
-src/shooting_single_action.cpp.o:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.o
-.PHONY : src/shooting_single_action.cpp.o
+src/actions/shooting_single_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/shooting_single_action.cpp.o
+.PHONY : src/actions/shooting_single_action.cpp.o
 
-src/shooting_single_action.i: src/shooting_single_action.cpp.i
+src/actions/shooting_single_action.i: src/actions/shooting_single_action.cpp.i
 
-.PHONY : src/shooting_single_action.i
+.PHONY : src/actions/shooting_single_action.i
 
 # target to preprocess a source file
-src/shooting_single_action.cpp.i:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.i
-.PHONY : src/shooting_single_action.cpp.i
+src/actions/shooting_single_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/shooting_single_action.cpp.i
+.PHONY : src/actions/shooting_single_action.cpp.i
 
-src/shooting_single_action.s: src/shooting_single_action.cpp.s
+src/actions/shooting_single_action.s: src/actions/shooting_single_action.cpp.s
 
-.PHONY : src/shooting_single_action.s
+.PHONY : src/actions/shooting_single_action.s
 
 # target to generate assembly for a file
-src/shooting_single_action.cpp.s:
-	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/shooting_single_action.cpp.s
-.PHONY : src/shooting_single_action.cpp.s
+src/actions/shooting_single_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/actions/shooting_single_action.cpp.s
+.PHONY : src/actions/shooting_single_action.cpp.s
+
+src/sentry_behavior_tree.o: src/sentry_behavior_tree.cpp.o
+
+.PHONY : src/sentry_behavior_tree.o
+
+# target to build an object file
+src/sentry_behavior_tree.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_behavior_tree.cpp.o
+.PHONY : src/sentry_behavior_tree.cpp.o
+
+src/sentry_behavior_tree.i: src/sentry_behavior_tree.cpp.i
+
+.PHONY : src/sentry_behavior_tree.i
+
+# target to preprocess a source file
+src/sentry_behavior_tree.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_behavior_tree.cpp.i
+.PHONY : src/sentry_behavior_tree.cpp.i
+
+src/sentry_behavior_tree.s: src/sentry_behavior_tree.cpp.s
+
+.PHONY : src/sentry_behavior_tree.s
+
+# target to generate assembly for a file
+src/sentry_behavior_tree.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/sentry_behavior_tree.cpp.s
+.PHONY : src/sentry_behavior_tree.cpp.s
+
+src/test/behavior_test_action.o: src/test/behavior_test_action.cpp.o
+
+.PHONY : src/test/behavior_test_action.o
+
+# target to build an object file
+src/test/behavior_test_action.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_action.cpp.o
+.PHONY : src/test/behavior_test_action.cpp.o
+
+src/test/behavior_test_action.i: src/test/behavior_test_action.cpp.i
+
+.PHONY : src/test/behavior_test_action.i
+
+# target to preprocess a source file
+src/test/behavior_test_action.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_action.cpp.i
+.PHONY : src/test/behavior_test_action.cpp.i
+
+src/test/behavior_test_action.s: src/test/behavior_test_action.cpp.s
+
+.PHONY : src/test/behavior_test_action.s
+
+# target to generate assembly for a file
+src/test/behavior_test_action.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_action.cpp.s
+.PHONY : src/test/behavior_test_action.cpp.s
+
+src/test/behavior_test_tree.o: src/test/behavior_test_tree.cpp.o
+
+.PHONY : src/test/behavior_test_tree.o
+
+# target to build an object file
+src/test/behavior_test_tree.cpp.o:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_tree.cpp.o
+.PHONY : src/test/behavior_test_tree.cpp.o
+
+src/test/behavior_test_tree.i: src/test/behavior_test_tree.cpp.i
+
+.PHONY : src/test/behavior_test_tree.i
+
+# target to preprocess a source file
+src/test/behavior_test_tree.cpp.i:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_tree.cpp.i
+.PHONY : src/test/behavior_test_tree.cpp.i
+
+src/test/behavior_test_tree.s: src/test/behavior_test_tree.cpp.s
+
+.PHONY : src/test/behavior_test_tree.s
+
+# target to generate assembly for a file
+src/test/behavior_test_tree.cpp.s:
+	cd /home/wyx/程序/sentry_autoaim/build && $(MAKE) -f libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/build.make libSentryAutoAim/CMakeFiles/SentryAutoAim.dir/src/test/behavior_test_tree.cpp.s
+.PHONY : src/test/behavior_test_tree.cpp.s
 
 # Help Target
 help:
@@ -323,27 +377,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SentryAutoAim"
-	@echo "... src/avoid_enemy_action.o"
-	@echo "... src/avoid_enemy_action.i"
-	@echo "... src/avoid_enemy_action.s"
-	@echo "... src/behavior_test_action.o"
-	@echo "... src/behavior_test_action.i"
-	@echo "... src/behavior_test_action.s"
-	@echo "... src/distinguish_armor_action.o"
-	@echo "... src/distinguish_armor_action.i"
-	@echo "... src/distinguish_armor_action.s"
-	@echo "... src/enemy_detect_action.o"
-	@echo "... src/enemy_detect_action.i"
-	@echo "... src/enemy_detect_action.s"
-	@echo "... src/escape_action.o"
-	@echo "... src/escape_action.i"
-	@echo "... src/escape_action.s"
-	@echo "... src/fast_patrol_action.o"
-	@echo "... src/fast_patrol_action.i"
-	@echo "... src/fast_patrol_action.s"
-	@echo "... src/shooting_single_action.o"
-	@echo "... src/shooting_single_action.i"
-	@echo "... src/shooting_single_action.s"
+	@echo "... src/actions/avoid_enemy_action.o"
+	@echo "... src/actions/avoid_enemy_action.i"
+	@echo "... src/actions/avoid_enemy_action.s"
+	@echo "... src/actions/distinguish_armor_action.o"
+	@echo "... src/actions/distinguish_armor_action.i"
+	@echo "... src/actions/distinguish_armor_action.s"
+	@echo "... src/actions/enemy_detect_action.o"
+	@echo "... src/actions/enemy_detect_action.i"
+	@echo "... src/actions/enemy_detect_action.s"
+	@echo "... src/actions/escape_action.o"
+	@echo "... src/actions/escape_action.i"
+	@echo "... src/actions/escape_action.s"
+	@echo "... src/actions/fast_patrol_action.o"
+	@echo "... src/actions/fast_patrol_action.i"
+	@echo "... src/actions/fast_patrol_action.s"
+	@echo "... src/actions/shooting_single_action.o"
+	@echo "... src/actions/shooting_single_action.i"
+	@echo "... src/actions/shooting_single_action.s"
+	@echo "... src/sentry_behavior_tree.o"
+	@echo "... src/sentry_behavior_tree.i"
+	@echo "... src/sentry_behavior_tree.s"
+	@echo "... src/test/behavior_test_action.o"
+	@echo "... src/test/behavior_test_action.i"
+	@echo "... src/test/behavior_test_action.s"
+	@echo "... src/test/behavior_test_tree.o"
+	@echo "... src/test/behavior_test_tree.i"
+	@echo "... src/test/behavior_test_tree.s"
 .PHONY : help
 
 

@@ -7,6 +7,9 @@
 #include <stdio.h>
 #include <iostream>
 #include <thread>
+#include <mutex>
+#include <atomic>
+#include "function_thread.h"
 
 //#define CAMERA_PARAMS_ADJUST
 
@@ -68,15 +71,15 @@ private:
 
     Mat bufferImage; //缓冲图像，用于线程更新使用
 
-    pthread_mutex_t imgMutex = PTHREAD_MUTEX_INITIALIZER; //互斥变量锁
+    std::mutex imgMutex;
 
-    bool isUpdate; //更新标志位
+    std::atomic<bool> isUpdate; //更新标志位
 
     bool isCapture; //是否采集图像
 
     bool is_enemy_red; //敌方颜色，用于重连时初始化
 
-    std::thread* capture_thread;
+    FunctionThread function_thread; //线程函数
 
     #ifdef CAMERA_PARAMS_ADJUST
 private:

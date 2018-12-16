@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wyx/程序/sentry_autoaim/libBT/src/behavior_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/behavior_node.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/behavior_tree.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/behavior_tree.cpp.o"
+  "/home/wyx/程序/sentry_autoaim/libBT/src/blackboard.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/blackboard.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/composite_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/composite_node.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/parallel_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/parallel_node.cpp.o"
   "/home/wyx/程序/sentry_autoaim/libBT/src/precondition_node.cpp" "/home/wyx/程序/sentry_autoaim/build/libBT/CMakeFiles/BehaviorTree.dir/src/precondition_node.cpp.o"
@@ -25,7 +26,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libBase/baseTools/include"
   "../libBT/include"
   "../libSentryAutoAim/include"
-  "../libSentryAutoAim/include/test"
   "../libBT/./include"
   )
 
