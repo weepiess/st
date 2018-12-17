@@ -61,12 +61,11 @@ bool EnemyDetectAction::setImage(){ //1-3ms
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     std::chrono::microseconds duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
     LOG_ERROR<<duration.count();
-    //imshow("src", src);
+    imshow("src", src);
 
     cv::Mat channels[3];
     split(src, channels);
     if(blackboard_ptr_->isEnemyRed()){
-        LOG_INFO<<"haha";
         GaussianBlur(channels[2] - channels[1], mask, Size(5,5), 0);
     } else{
         GaussianBlur(channels[0] - channels[2], mask, Size(5,5), 0);
@@ -75,8 +74,8 @@ bool EnemyDetectAction::setImage(){ //1-3ms
     //膨胀
     cv::Mat element = getStructuringElement(MORPH_ELLIPSE, Size(1, 3));
     dilate(mask, mask, element);
-    //cv::imshow("mask", mask);
-    //waitKey(1);
+    cv::imshow("mask", mask);
+    waitKey(1);
 
     return true;
 }

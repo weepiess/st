@@ -35,34 +35,42 @@ void Blackboard::updateArmorInfo(bool is_found, const vector<Armor>& detected_ar
 
 /*---------------------行为树获取数据---------------------*/
 int Blackboard::getBloodRemain(){
+    std::lock_guard<std::mutex> blood_lock(blood_mutex); //加锁
     return blood_info.blood_remain;
 }
 
 int Blackboard::getBloodLoss(){
+    std::lock_guard<std::mutex> blood_lock(blood_mutex); //加锁
     return blood_info.blood_loss_once;
 }
 
 uchar Blackboard::getArmorId(){
+    std::lock_guard<std::mutex> blood_lock(blood_mutex); //加锁
     return blood_info.wounded_armor_id;
 }
 
 uchar Blackboard::isSelfSave(){
+    std::lock_guard<std::mutex> blood_lock(blood_mutex); //加锁
     return blood_info.is_self_save;
 }
 
 float Blackboard::getCurrPicth(){
+    std::lock_guard<std::mutex> chassis_lock(chassis_mutex); //加锁
     return chassis_info.pitch;
 }
 
 float Blackboard::getCurrYaw(){
+    std::lock_guard<std::mutex> chassis_lock(chassis_mutex); //加锁
     return chassis_info.yaw;
 }
 
 short int Blackboard::getCurrPos(){
+    std::lock_guard<std::mutex> chassis_lock(chassis_mutex); //加锁
     return chassis_info.current_pos;
 }
 
 uchar Blackboard::isBulletRemain(){
+    std::lock_guard<std::mutex> chassis_lock(chassis_mutex); //加锁
     return chassis_info.is_bullet_remain;
 }
 

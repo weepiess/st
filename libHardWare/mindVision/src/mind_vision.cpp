@@ -171,7 +171,10 @@ int MindVision::getRawImage(){
         }
         iplImage = cvCreateImageHeader(cvSize(sFrameInfo.iWidth,sFrameInfo.iHeight),IPL_DEPTH_8U,channel);
         cvSetData(iplImage,g_pRgbBuffer,sFrameInfo.iWidth*channel);//此处只是设置指针，无图像块数据拷贝，不需担心转换效率
-        bufferImage = cv::cvarrToMat(iplImage, true); //复制内存中的图片到bufferImage
+        {
+            std::lock_guard<std::mutex> lock(imgMutex); //防止多线程读取图片出错
+            bufferImage = cv::cvarrToMat(iplImage, true); //复制内存中的图片到bufferImage
+        }
         isUpdate = true;
 
         //在成功调用CameraGetImageBuffer后，必须调用CameraReleaseImageBuffer来释放获得的buffer。
@@ -181,7 +184,6 @@ int MindVision::getRawImage(){
 }
 
 int MindVision::getImg(Mat &src){
-    std::lock_guard<std::mutex> lock(imgMutex); //防止多线程读取图片出错
     if(!isUpdate){
         //等待15ms
         int timeCounter=0;
@@ -194,7 +196,10 @@ int MindVision::getImg(Mat &src){
             return -1;//更新超时
         }
     }
-    bufferImage.copyTo(src);//读取图片
+    {
+        std::lock_guard<std::mutex> lock(imgMutex); //防止多线程读取图片出错
+        bufferImage.copyTo(src);//读取图片
+    }
     if(src.empty()){
         return -1;
     }
